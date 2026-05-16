@@ -33,7 +33,7 @@ export function RequestQuoteForm() {
           value={formData.name}
           onChange={handleChange}
           placeholder="Your Name"
-          className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#E31E24] transition-colors"
+          className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#ff0000] transition-colors"
         />
         <input
           type="email"
@@ -41,7 +41,7 @@ export function RequestQuoteForm() {
           value={formData.email}
           onChange={handleChange}
           placeholder="Email Address"
-          className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#E31E24] transition-colors"
+          className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#ff0000] transition-colors"
         />
       </div>
 
@@ -52,7 +52,7 @@ export function RequestQuoteForm() {
             name="countryCode"
             value={formData.countryCode}
             onChange={handleChange}
-            className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#E31E24] transition-colors"
+            className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#ff0000] transition-colors"
           >
             <option value="">Code</option>
             <option value="+1">+1 (US)</option>
@@ -77,7 +77,7 @@ export function RequestQuoteForm() {
           value={formData.phone}
           onChange={handleChange}
           placeholder="Phone Number"
-          className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#E31E24] transition-colors"
+          className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#ff0000] transition-colors"
         />
       </div>
 
@@ -89,14 +89,14 @@ export function RequestQuoteForm() {
           value={formData.company}
           onChange={handleChange}
           placeholder="Company Name"
-          className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#E31E24] transition-colors"
+          className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:border-[#ff0000] transition-colors"
         />
         <div className="relative">
           <select
             name="country"
             value={formData.country}
             onChange={handleChange}
-            className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#E31E24] transition-colors"
+            className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#ff0000] transition-colors"
           >
             <option value="">Country</option>
             <option value="US">United States</option>
@@ -124,7 +124,7 @@ export function RequestQuoteForm() {
             name="numberOfCars"
             value={formData.numberOfCars}
             onChange={handleChange}
-            className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#E31E24] transition-colors"
+            className="w-full h-14 bg-white border border-gray-200 rounded-full px-6 text-sm text-gray-700 appearance-none focus:outline-none focus:border-[#ff0000] transition-colors"
           >
             <option value="">Number of Cars</option>
             <option value="1-10">1 - 10</option>
@@ -145,7 +145,7 @@ export function RequestQuoteForm() {
       {/* Submit Button */}
       <button
         type="submit"
-        className="w-full bg-[#E31E24] hover:bg-red-700 text-white font-bold text-lg py-4 rounded-lg transition-colors mt-4"
+        className="w-full bg-[#ff0000] hover:bg-[#E53935] text-white font-bold text-lg py-4 rounded-lg transition-colors mt-4"
       >
         Request A Quote
       </button>

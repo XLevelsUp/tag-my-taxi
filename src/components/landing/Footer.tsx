@@ -11,10 +11,10 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-bold text-gray-900 mb-6">Company</h4>
             <ul className="space-y-3">
-              <li><Link href="/about" className="text-gray-600 hover:text-[#E31E24] transition-colors text-sm">About Us</Link></li>
-              <li><Link href="#" className="text-gray-600 hover:text-[#E31E24] transition-colors text-sm">FAQ</Link></li>
-              <li><Link href="/portfolio" className="text-gray-600 hover:text-[#E31E24] transition-colors text-sm">Portfolio</Link></li>
-              <li><Link href="/contact" className="text-gray-600 hover:text-[#E31E24] transition-colors text-sm">Contact Us</Link></li>
+              <li><Link href="/about" className="text-gray-600 hover:text-[#ff0000] transition-colors text-sm">About Us</Link></li>
+              <li><Link href="#" className="text-gray-600 hover:text-[#ff0000] transition-colors text-sm">FAQ</Link></li>
+              <li><Link href="/portfolio" className="text-gray-600 hover:text-[#ff0000] transition-colors text-sm">Portfolio</Link></li>
+              <li><Link href="/contact" className="text-gray-600 hover:text-[#ff0000] transition-colors text-sm">Contact Us</Link></li>
             </ul>
           </div>
 
@@ -22,11 +22,11 @@ export function Footer() {
           <div>
             <h4 className="text-lg font-bold text-gray-900 mb-6">More</h4>
             <ul className="space-y-3">
-              <li><Link href="#" className="text-gray-600 hover:text-[#E31E24] transition-colors text-sm">Uber Clone</Link></li>
-              <li><Link href="/features" className="text-gray-600 hover:text-[#E31E24] transition-colors text-sm">Features</Link></li>
-              <li><Link href="/portfolio" className="text-gray-600 hover:text-[#E31E24] transition-colors text-sm">Portfolio</Link></li>
-              <li><Link href="#" className="text-gray-600 hover:text-[#E31E24] transition-colors text-sm">Technology</Link></li>
-              <li><Link href="#" className="text-gray-600 hover:text-[#E31E24] transition-colors text-sm">Pricing</Link></li>
+              <li><Link href="#" className="text-gray-600 hover:text-[#ff0000] transition-colors text-sm">Uber Clone</Link></li>
+              <li><Link href="/features" className="text-gray-600 hover:text-[#ff0000] transition-colors text-sm">Features</Link></li>
+              <li><Link href="/portfolio" className="text-gray-600 hover:text-[#ff0000] transition-colors text-sm">Portfolio</Link></li>
+              <li><Link href="#" className="text-gray-600 hover:text-[#ff0000] transition-colors text-sm">Technology</Link></li>
+              <li><Link href="#" className="text-gray-600 hover:text-[#ff0000] transition-colors text-sm">Pricing</Link></li>
             </ul>
           </div>
 
@@ -86,10 +86,10 @@ export function Footer() {
       <div className="border-t border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex flex-wrap gap-6 text-xs text-gray-500">
-            <Link href="#" className="hover:text-[#E31E24] transition-colors">Terms of Use</Link>
-            <Link href="#" className="hover:text-[#E31E24] transition-colors">Privacy Policy</Link>
-            <Link href="#" className="hover:text-[#E31E24] transition-colors">Cookie Policy</Link>
-            <Link href="#" className="hover:text-[#E31E24] transition-colors">Refund Policy</Link>
+            <Link href="#" className="hover:text-[#ff0000] transition-colors">Terms of Use</Link>
+            <Link href="#" className="hover:text-[#ff0000] transition-colors">Privacy Policy</Link>
+            <Link href="#" className="hover:text-[#ff0000] transition-colors">Cookie Policy</Link>
+            <Link href="#" className="hover:text-[#ff0000] transition-colors">Refund Policy</Link>
           </div>
           <p className="text-xs text-gray-400">© {new Date().getFullYear()}, Tagmytaxi.com All Rights Reserved.</p>
         </div>

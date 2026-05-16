@@ -4,9 +4,9 @@ export function PhoneCard({ image, title }: { image: string; title: string }) {
   return (
     <div className="relative w-[280px] mx-auto">
       {/* Top-right red accent */}
-      <div className="absolute top-0 right-0 w-12 h-12 bg-[#E31E24] z-10" />
+      <div className="absolute top-0 right-0 w-12 h-12 bg-[#ff0000] z-10" />
       {/* Bottom-left red accent */}
-      <div className="absolute bottom-0 left-0 w-12 h-12 bg-[#E31E24] z-10" />
+      <div className="absolute bottom-0 left-0 w-12 h-12 bg-[#ff0000] z-10" />
 
       {/* Phone frame */}
       <div className="relative z-20 rounded-[2rem] border-[6px] border-gray-300 overflow-hidden shadow-lg bg-white">

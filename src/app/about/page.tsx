@@ -62,12 +62,12 @@ export default function AboutPage() {
       {/* Page Header */}
       <header className="pt-40 pb-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-3">
-          <span className="text-[#E31E24] font-bold uppercase tracking-widest text-xs">Our Story</span>
+          <span className="text-[#ff0000] font-bold uppercase tracking-widest text-xs">Our Story</span>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">About Us</h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Driving the future of on-demand taxi technology since 2012
           </p>
-          <div className="w-16 h-1 bg-[#E31E24] mx-auto mt-4" />
+          <div className="w-16 h-1 bg-[#ff0000] mx-auto mt-4" />
         </div>
       </header>
 
@@ -117,7 +117,7 @@ export default function AboutPage() {
             ].map((s) => (
               <div key={s.label}>
                 <div className="text-4xl md:text-5xl font-black text-gray-900">{s.value}</div>
-                <div className="text-[#E31E24] text-sm font-medium mt-1">{s.label}</div>
+                <div className="text-[#ff0000] text-sm font-medium mt-1">{s.label}</div>
               </div>
             ))}
           </div>
@@ -132,17 +132,17 @@ export default function AboutPage() {
             </p>
             <div className="grid md:grid-cols-3 gap-10">
               <WhyCard
-                icon={<LayoutGrid className="w-8 h-8 text-[#E31E24]" />}
+                icon={<LayoutGrid className="w-8 h-8 text-[#ff0000]" />}
                 title="Personalized attention"
                 desc="All of our work is focused on the clients and in obtaining the results that they deserve."
               />
               <WhyCard
-                icon={<BadgeCheck className="w-8 h-8 text-[#E31E24]" />}
+                icon={<BadgeCheck className="w-8 h-8 text-[#ff0000]" />}
                 title="Perfected process"
                 desc="One of our greatest triumphs is our seamless system that delivers high-quality products."
               />
               <WhyCard
-                icon={<ThumbsUp className="w-8 h-8 text-[#E31E24]" />}
+                icon={<ThumbsUp className="w-8 h-8 text-[#ff0000]" />}
                 title="Proven expertise"
                 desc="The signature virtue of our business is the strong loyalty we uphold to our clients."
               />
@@ -151,7 +151,7 @@ export default function AboutPage() {
         </section>
 
         {/* Red divider */}
-        <div className="w-full h-1 bg-[#E31E24]" />
+        <div className="w-full h-1 bg-[#ff0000]" />
 
         {/* ── Timeline ── */}
         <section className="py-20 bg-white">
@@ -232,7 +232,7 @@ export default function AboutPage() {
                   thereby our clients.
                 </p>
                 <Link href="/portfolio">
-                  <button className="bg-[#E31E24] hover:bg-red-700 text-white font-bold text-sm px-8 py-3 transition-colors">
+                  <button className="bg-[#ff0000] hover:bg-[#E53935] text-white font-bold text-sm px-8 py-3 transition-colors">
                     Our Great Works
                   </button>
                 </Link>
@@ -256,11 +256,11 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold text-gray-900 mb-14">Our Process to Success</h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
               {[
-                { icon: <BarChart2 className="w-10 h-10 text-[#E31E24]" />, label: 'Analyze' },
-                { icon: <Pencil className="w-10 h-10 text-[#E31E24]" />, label: 'Design' },
-                { icon: <Wrench className="w-10 h-10 text-[#E31E24]" />, label: 'Build' },
-                { icon: <FlaskConical className="w-10 h-10 text-[#E31E24]" />, label: 'Test' },
-                { icon: <PackageCheck className="w-10 h-10 text-[#E31E24]" />, label: 'Deliver' },
+                { icon: <BarChart2 className="w-10 h-10 text-[#ff0000]" />, label: 'Analyze' },
+                { icon: <Pencil className="w-10 h-10 text-[#ff0000]" />, label: 'Design' },
+                { icon: <Wrench className="w-10 h-10 text-[#ff0000]" />, label: 'Build' },
+                { icon: <FlaskConical className="w-10 h-10 text-[#ff0000]" />, label: 'Test' },
+                { icon: <PackageCheck className="w-10 h-10 text-[#ff0000]" />, label: 'Deliver' },
               ].map((step) => (
                 <div key={step.label} className="flex flex-col items-center gap-3">
                   {step.icon}

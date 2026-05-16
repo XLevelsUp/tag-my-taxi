@@ -19,32 +19,44 @@ export default async function Home() {
     <div className="flex flex-col min-h-screen bg-white font-sans text-gray-900">
       <Navbar />
 
-      {/* Hero Section */}
-      <section className="relative min-h-[680px] flex items-center justify-center overflow-hidden">
-        <Image 
-          src="/hero_highway_bg.png" 
-          alt="City Highway Traffic" 
-          fill 
-          className="object-cover"
-          priority
-        />
-        <div className="absolute inset-0 bg-black/50"></div>
-        
-        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto py-20">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>
+      {/* Hero Section — banner.jpg from tagmytaxi.ae */}
+      <section
+        className="relative flex items-center justify-center overflow-hidden"
+        style={{
+          backgroundImage: 'url(/banner.jpg)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center center',
+          backgroundRepeat: 'no-repeat',
+          minHeight: '700px',
+        }}
+      >
+        {/* Dark overlay — matches reference site ~50% opacity */}
+        <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.50)' }} />
+
+        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto py-24">
+          <h1
+            className="text-4xl md:text-5xl lg:text-[56px] font-extrabold leading-tight mb-6 text-white"
+            style={{ lineHeight: '1.2' }}
+          >
             On-demand Taxi Dispatch<br />
             Software To Build An Uber-like<br />
             Business
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-10 font-light" style={{ fontFamily: 'Georgia, "Times New Roman", serif', fontStyle: 'italic' }}>
+          <p className="text-lg md:text-xl text-gray-200 mb-10 font-normal italic">
             With Tagmytaxi, you can set up your white-label taxi solution in no time
           </p>
           <Link href="/contact">
-            <button className="bg-[#E31E24] hover:bg-red-700 text-white font-bold text-lg px-12 py-4 transition-colors mb-6">
+            <button
+              className="text-white font-bold text-base uppercase tracking-wide transition-colors mb-5 bg-[#ff0000] hover:bg-[#E53935]"
+              style={{
+                padding: '15px 35px',
+                borderRadius: '5px',
+              }}
+            >
               Get Free Trial
             </button>
           </Link>
-          <p className="text-gray-300 text-base italic" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>
+          <p className="text-gray-300 text-base italic mt-2">
             Try free for 15 days. No risk, and no credit card required.
           </p>
         </div>
@@ -60,7 +72,7 @@ export default async function Home() {
       </section>
 
       {/* Red Divider Line */}
-      <div className="w-full h-1 bg-[#E31E24]"></div>
+      <div className="w-full h-1 bg-[#ff0000]"></div>
 
       {/* A Reliable Uber Clone Section */}
       <section className="py-20 bg-white">
@@ -76,32 +88,32 @@ export default async function Home() {
           
           <div className="grid md:grid-cols-3 gap-x-12 gap-y-16">
             <FeatureCard 
-              icon={<Lightbulb className="w-10 h-10 text-[#E31E24]" />}
+              icon={<Lightbulb className="w-10 h-10 text-[#ff0000]" />}
               title="Showcase your brand"
               description="Bring all your brand elements - right from logo, graphics to color scheme - to your white-labeled Uber clone taxi software for a personalized platform."
             />
             <FeatureCard 
-              icon={<TrendingUp className="w-10 h-10 text-[#E31E24]" />}
+              icon={<TrendingUp className="w-10 h-10 text-[#ff0000]" />}
               title="Go digital, grow your revenue"
               description="Automate your taxi operations to unlock cost-savings, attract a wider customer base and increase revenue opportunities with an Uber clone software."
             />
             <FeatureCard 
-              icon={<Tv className="w-10 h-10 text-[#E31E24]" />}
+              icon={<Tv className="w-10 h-10 text-[#ff0000]" />}
               title="Suite of dispatch system & mobile apps"
               description="Offer your passengers and drivers the convenience of Uber-like mobile apps while you discover the best way of dispatching with our taxi dispatch system."
             />
             <FeatureCard 
-              icon={<TrendingUp className="w-10 h-10 text-[#E31E24]" />}
+              icon={<TrendingUp className="w-10 h-10 text-[#ff0000]" />}
               title="Go digital, grow your revenue"
               description="Automate your taxi operations to unlock cost-savings, attract a wider customer base and increase revenue opportunities with an Uber clone software."
             />
             <FeatureCard 
-              icon={<Settings className="w-10 h-10 text-[#E31E24]" />}
+              icon={<Settings className="w-10 h-10 text-[#ff0000]" />}
               title="Built for your unique business"
               description="Set up a digital platform that effortlessly adapts your unique business model, fare strategy and customer experience with our Uber clone taxi application."
             />
             <FeatureCard 
-              icon={<Rocket className="w-10 h-10 text-[#E31E24]" />}
+              icon={<Rocket className="w-10 h-10 text-[#ff0000]" />}
               title="Launch your platform in no time"
               description="Get ready to take on the digital competition of the taxi world by setting up your cloud-based, Uber-like taxi dispatch software instantly."
             />
@@ -121,7 +133,7 @@ export default async function Home() {
                 The digital transformation of the taxi industry demands every business to step up their game for their survival. Tagmytaxi introduces a ready-made, on-demand taxi management software that empowers taxi companies to take charge of their operations and automate their activities for a better outcome. Explore the advanced features of an Uber clone taxi software that is both unique and profitable.
               </p>
               <Link href="/features">
-                <button className="bg-[#E31E24] hover:bg-red-700 text-white font-bold text-sm px-8 py-3 rounded-full transition-colors">
+                <button className="bg-[#ff0000] hover:bg-[#E53935] text-white font-bold text-sm px-8 py-3 rounded-full transition-colors">
                   View Features
                 </button>
               </Link>
@@ -160,7 +172,7 @@ export default async function Home() {
                 The traditional taxi business is plagued with complex manual processes. Tagmytaxi breaks these inefficiencies with its Uber-like taxi booking app that saves both time and money. Witness how a white-label Uber clone taxi software can help your business to increase your bookings, improve productivity and gain more returns.
               </p>
               <Link href="/contact">
-                <button className="bg-[#E31E24] hover:bg-red-700 text-white font-bold text-sm px-8 py-3 rounded-full transition-colors">
+                <button className="bg-[#ff0000] hover:bg-[#E53935] text-white font-bold text-sm px-8 py-3 rounded-full transition-colors">
                   Request Demo
                 </button>
               </Link>
@@ -181,7 +193,7 @@ export default async function Home() {
                 Our white-label, on-demand taxi dispatch application is crafted in such a way that it can accommodate your specific business requirements. From a rental company, shuttle service to paratransit business, our unique booking software incorporates advanced features that address industry needs. Scale your business to newer heights with Tagmytaxi.
               </p>
               <Link href="/contact">
-                <button className="bg-white hover:bg-gray-50 text-[#E31E24] font-bold text-sm px-8 py-3 rounded-full border-2 border-[#E31E24] transition-colors">
+                <button className="bg-white hover:bg-gray-50 text-[#ff0000] font-bold text-sm px-8 py-3 rounded-full border-2 border-[#ff0000] transition-colors">
                   Get Uber Clone
                 </button>
               </Link>
@@ -204,7 +216,7 @@ export default async function Home() {
         <div className="max-w-3xl mx-auto px-6">
           <div className="bg-white rounded-2xl shadow-lg p-10 md:p-14">
             <div className="text-center mb-10">
-              <span className="text-[#E31E24] font-bold uppercase tracking-widest text-xs">REQUEST A QUOTE</span>
+              <span className="text-[#ff0000] font-bold uppercase tracking-widest text-xs">REQUEST A QUOTE</span>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2">Get a Free Demo</h2>
             </div>
             <RequestQuoteForm />

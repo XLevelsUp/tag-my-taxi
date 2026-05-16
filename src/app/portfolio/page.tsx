@@ -134,12 +134,12 @@ export default function PortfolioPage() {
       {/* Header */}
       <header className="pt-40 pb-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-3">
-          <span className="text-[#E31E24] font-bold uppercase tracking-widest text-xs">Our Work</span>
+          <span className="text-[#ff0000] font-bold uppercase tracking-widest text-xs">Our Work</span>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">Portfolio</h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Trusted by taxi companies and startups across 42+ countries
           </p>
-          <div className="w-16 h-1 bg-[#E31E24] mx-auto mt-4" />
+          <div className="w-16 h-1 bg-[#ff0000] mx-auto mt-4" />
         </div>
       </header>
 
@@ -150,14 +150,14 @@ export default function PortfolioPage() {
       </main>
 
       {/* CTA */}
-      <section className="py-16 bg-[#E31E24] text-white text-center">
+      <section className="py-16 bg-[#ff0000] text-white text-center">
         <div className="max-w-2xl mx-auto px-6 space-y-6">
           <h2 className="text-3xl font-bold">Ready to be our next success story?</h2>
           <p className="text-red-100">
             Join 500+ taxi companies and startups that trust TagMyTaxi to power their operations.
           </p>
           <Link href="/contact">
-            <button className="bg-white text-[#E31E24] hover:bg-red-50 font-bold px-10 py-4 rounded-full transition-colors text-sm uppercase tracking-widest">
+            <button className="bg-white text-[#ff0000] hover:bg-red-100 font-bold px-10 py-4 rounded-full transition-colors text-sm uppercase tracking-widest">
               Get a Free Demo
             </button>
           </Link>

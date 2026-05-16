@@ -42,13 +42,13 @@ export function Navbar() {
           <Link 
             key={link.href} 
             href={link.href} 
-            className={`text-xs font-bold uppercase tracking-wider transition-colors hover:text-[#E31E24] ${isActive(link.href) ? 'text-[#E31E24]' : 'text-gray-800'}`}
+            className={`text-xs font-bold uppercase tracking-wider transition-colors hover:text-[#ff0000] ${isActive(link.href) ? 'text-[#ff0000]' : 'text-gray-800'}`}
           >
             {link.name}
           </Link>
         ))}
         <Link href="/contact">
-          <button className="bg-[#E31E24] hover:bg-red-700 text-white font-bold uppercase tracking-wider text-xs px-6 py-2.5 rounded transition-colors">
+          <button className="bg-[#ff0000] hover:bg-[#E53935] text-white font-bold uppercase tracking-wider text-xs px-6 py-2.5 rounded transition-colors">
             GET STARTED
           </button>
         </Link>
@@ -68,14 +68,14 @@ export function Navbar() {
             <Link 
               key={link.href} 
               href={link.href} 
-              className={`text-sm font-bold uppercase tracking-widest ${isActive(link.href) ? 'text-[#E31E24]' : 'text-gray-900'}`}
+              className={`text-sm font-bold uppercase tracking-widest ${isActive(link.href) ? 'text-[#ff0000]' : 'text-gray-900'}`}
               onClick={() => setIsOpen(false)}
             >
               {link.name}
             </Link>
           ))}
           <Link href="/contact" onClick={() => setIsOpen(false)}>
-            <button className="w-full bg-[#E31E24] text-white font-bold uppercase tracking-wider text-xs px-6 py-4 rounded">
+            <button className="w-full bg-[#ff0000] text-white font-bold uppercase tracking-wider text-xs px-6 py-4 rounded">
               GET STARTED
             </button>
           </Link>
