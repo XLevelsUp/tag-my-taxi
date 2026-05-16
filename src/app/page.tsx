@@ -140,11 +140,12 @@ export default async function Home() {
             </div>
             <div className="flex justify-center">
               <Image 
-                src="/phone_app_illustration.png" 
+                src="/homeBanner.png" 
                 alt="Uber Clone Taxi App" 
-                width={450} 
-                height={400} 
+                width={480} 
+                height={430} 
                 className="object-contain"
+                priority
               />
             </div>
           </div>
@@ -157,7 +158,7 @@ export default async function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="flex justify-center">
               <Image 
-                src="/taxi_ride_illustration.png" 
+                src="/taxi-app.png" 
                 alt="Taxi Booking App" 
                 width={450} 
                 height={400} 
@@ -200,7 +201,7 @@ export default async function Home() {
             </div>
             <div className="flex justify-center">
               <Image 
-                src="/business_growth_illustration.png" 
+                src="/solutions_designed.png" 
                 alt="Business Growth Solutions" 
                 width={450} 
                 height={400} 
