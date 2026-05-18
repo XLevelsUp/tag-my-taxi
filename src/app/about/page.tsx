@@ -24,7 +24,7 @@ const timelineEvents = [
     year: '2016',
     color: '#F5A623',   // amber
     side: 'right',
-    title: 'Carrying customers in Cloud',
+    title: 'Carrying customer in Cloud',
     desc: 'Updation at even nooks of the world via Mongo DB and Amazon Cloud servers',
   },
   {
