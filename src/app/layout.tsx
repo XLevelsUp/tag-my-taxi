@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
+import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 
 const roboto = Roboto({
   variable: "--font-sans",
@@ -25,7 +26,10 @@ export default function RootLayout({
       lang="en"
       className={`${roboto.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <FloatingWhatsApp />
+      </body>
     </html>
   );
 }

@@ -6,6 +6,7 @@ import { Navbar } from '@/components/landing/Navbar'
 import { Footer } from '@/components/landing/Footer'
 import { Lightbulb, Rocket, BarChart3, Tv, Settings, TrendingUp } from 'lucide-react'
 import { RequestQuoteForm } from '@/components/landing/RequestQuoteForm'
+import { FadeIn } from '@/components/animations/FadeIn'
 
 export default async function Home() {
   const supabase = await createClient()
@@ -33,7 +34,7 @@ export default async function Home() {
         {/* Dark overlay — matches reference site ~50% opacity */}
         <div className="absolute inset-0" style={{ backgroundColor: 'rgba(0,0,0,0.50)' }} />
 
-        <div className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto py-24">
+        <FadeIn delay={0.2} direction="up" className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto py-24">
           <h1
             className="text-4xl md:text-5xl lg:text-[56px] font-extrabold leading-tight mb-6 text-white"
             style={{ lineHeight: '1.2' }}
@@ -59,16 +60,16 @@ export default async function Home() {
           <p className="text-gray-300 text-base italic mt-2">
             Try free for 15 days. No risk, and no credit card required.
           </p>
-        </div>
+        </FadeIn>
       </section>
 
       {/* Stats Section */}
       <section className="py-16 bg-white border-b border-gray-100">
-        <div className="max-w-5xl mx-auto px-6 grid grid-cols-3 gap-8 text-center">
+        <FadeIn delay={0.2} direction="up" className="max-w-5xl mx-auto px-6 grid grid-cols-3 gap-8 text-center">
           <StatItem value="500+" label="Taxi companies & startups" />
           <StatItem value="42" label="Countries" />
           <StatItem value="50,000+" label="Vehicles" />
-        </div>
+        </FadeIn>
       </section>
 
       {/* Red Divider Line */}
@@ -77,16 +78,16 @@ export default async function Home() {
       {/* A Reliable Uber Clone Section */}
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="text-center mb-16">
+          <FadeIn delay={0.1} direction="up" className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               A Reliable Uber Clone Taxi Software
             </h2>
             <p className="text-gray-500 text-lg max-w-2xl mx-auto">
               Establish your taxi business or scale an existing one with our Uber clone platform
             </p>
-          </div>
+          </FadeIn>
           
-          <div className="grid md:grid-cols-3 gap-x-12 gap-y-16">
+          <FadeIn delay={0.3} direction="up" className="grid md:grid-cols-3 gap-x-12 gap-y-16">
             <FeatureCard 
               icon={<Lightbulb className="w-10 h-10 text-[#ff0000]" />}
               title="Showcase your brand"
@@ -117,7 +118,7 @@ export default async function Home() {
               title="Launch your platform in no time"
               description="Get ready to take on the digital competition of the taxi world by setting up your cloud-based, Uber-like taxi dispatch software instantly."
             />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
@@ -125,7 +126,7 @@ export default async function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+            <FadeIn delay={0.2} direction="right" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                 An Uber-Clone Taxi Application Like No Other
               </h2>
@@ -137,8 +138,8 @@ export default async function Home() {
                   View Features
                 </button>
               </Link>
-            </div>
-            <div className="flex justify-center">
+            </FadeIn>
+            <FadeIn delay={0.4} direction="left" className="flex justify-center">
               <Image 
                 src="/homeBanner.png" 
                 alt="Uber Clone Taxi App" 
@@ -147,7 +148,7 @@ export default async function Home() {
                 className="object-contain"
                 priority
               />
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -156,7 +157,7 @@ export default async function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
+            <FadeIn delay={0.2} direction="right" className="flex justify-center">
               <Image 
                 src="/taxi-app.png" 
                 alt="Taxi Booking App" 
@@ -164,8 +165,8 @@ export default async function Home() {
                 height={400} 
                 className="object-contain"
               />
-            </div>
-            <div className="space-y-6">
+            </FadeIn>
+            <FadeIn delay={0.4} direction="left" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                 Drive More Business With An App Like Uber
               </h2>
@@ -177,7 +178,7 @@ export default async function Home() {
                   Request Demo
                 </button>
               </Link>
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -186,7 +187,7 @@ export default async function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
+            <FadeIn delay={0.2} direction="right" className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                 Uber Clone Solutions Designed For Businesses Like Yours
               </h2>
@@ -198,8 +199,8 @@ export default async function Home() {
                   Get Uber Clone
                 </button>
               </Link>
-            </div>
-            <div className="flex justify-center">
+            </FadeIn>
+            <FadeIn delay={0.4} direction="left" className="flex justify-center">
               <Image 
                 src="/solutions_designed.png" 
                 alt="Business Growth Solutions" 
@@ -207,7 +208,7 @@ export default async function Home() {
                 height={400} 
                 className="object-contain"
               />
-            </div>
+            </FadeIn>
           </div>
         </div>
       </section>
@@ -215,13 +216,13 @@ export default async function Home() {
       {/* Request A Quote Section */}
       <section className="py-20 bg-white">
         <div className="max-w-3xl mx-auto px-6">
-          <div className="bg-white rounded-2xl shadow-lg p-10 md:p-14">
+          <FadeIn delay={0.2} direction="up" className="bg-white rounded-2xl shadow-lg p-10 md:p-14">
             <div className="text-center mb-10">
               <span className="text-[#ff0000] font-bold uppercase tracking-widest text-xs">REQUEST A QUOTE</span>
               <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2">Get a Free Demo</h2>
             </div>
             <RequestQuoteForm />
-          </div>
+          </FadeIn>
         </div>
       </section>
 
