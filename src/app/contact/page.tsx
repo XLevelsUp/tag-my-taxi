@@ -1,9 +1,9 @@
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Car, MapPin, Phone, Mail, Clock, Send } from 'lucide-react'
+import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
 import { Navbar } from '@/components/landing/Navbar'
 import { Footer } from '@/components/landing/Footer'
+import { ContactForm } from '@/components/landing/ContactForm'
 
 export default function ContactPage() {
   return (
@@ -59,41 +59,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white p-10 lg:p-16 rounded-[3rem] shadow-2xl border border-gray-100 relative overflow-hidden group">
-              <div className="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-full -mr-16 -mt-16 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
-              <form className="space-y-8 relative z-10">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label className="text-xs font-black uppercase tracking-widest text-gray-500">First Name</label>
-                    <input type="text" className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors" placeholder="John" />
-                  </div>
-                  <div className="space-y-2">
-                    <label className="text-xs font-black uppercase tracking-widest text-gray-500">Last Name</label>
-                    <input type="text" className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors" placeholder="Doe" />
-                  </div>
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs font-black uppercase tracking-widest text-gray-500">Work Email</label>
-                  <input type="email" className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors" placeholder="john@company.com" />
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs font-black uppercase tracking-widest text-gray-500">Fleet Size</label>
-                  <select className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors appearance-none">
-                    <option>1 - 10 vehicles</option>
-                    <option>11 - 50 vehicles</option>
-                    <option>51 - 200 vehicles</option>
-                    <option>200+ vehicles</option>
-                  </select>
-                </div>
-                <div className="space-y-2">
-                  <label className="text-xs font-black uppercase tracking-widest text-gray-500">Message</label>
-                  <textarea className="w-full h-40 bg-gray-50 border border-gray-200 rounded-3xl p-6 focus:outline-none focus:border-[#ff0000] transition-colors resize-none" placeholder="Tell us about your business goals..."></textarea>
-                </div>
-                <Button className="w-full bg-[#ff0000] hover:bg-[#E53935] h-16 rounded-full font-black uppercase tracking-[0.2em] text-white shadow-xl shadow-red-200 group">
-                  Send Inquiry <Send className="ml-2 w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                </Button>
-              </form>
-            </div>
+            <ContactForm />
           </div>
         </div>
       </main>
