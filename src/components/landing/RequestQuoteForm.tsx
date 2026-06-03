@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { submitToGoogleSheets } from '@/app/actions/sheets'
+import * as gtag from '../../utils/gtag'
 
 export function RequestQuoteForm() {
   const [formData, setFormData] = useState({
@@ -47,6 +48,13 @@ export function RequestQuoteForm() {
       })
 
       if (response.success) {
+        // Track lead submission in Google Analytics
+        gtag.event({
+          action: 'generate_lead',
+          category: 'Form Submission',
+          label: 'Request Quote Form',
+        })
+
         setSuccess(true)
         setFormData({
           name: '',

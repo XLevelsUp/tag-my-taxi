@@ -4,6 +4,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Send, CheckCircle2 } from 'lucide-react'
 import { submitToGoogleSheets } from '@/app/actions/sheets'
+import * as gtag from '../../utils/gtag'
 
 export function ContactForm() {
   const [formData, setFormData] = useState({
@@ -44,6 +45,13 @@ export function ContactForm() {
       })
 
       if (response.success) {
+        // Track lead submission in Google Analytics
+        gtag.event({
+          action: 'generate_lead',
+          category: 'Form Submission',
+          label: 'Contact Form',
+        })
+
         setSuccess(true)
         setFormData({
           firstName: '',
@@ -56,6 +64,7 @@ export function ContactForm() {
         setError(response.error || "Failed to send inquiry. Please try again.")
       }
     } catch (err) {
+
       setError("An unexpected error occurred. Please try again later.")
     } finally {
       setLoading(false)
