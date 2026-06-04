@@ -1,0 +1,133 @@
+'use client'
+
+import Link from 'next/link'
+
+// ─── Hero CTA Button ─────────────────────────────────────────────────────────
+export function HeroCTAButton() {
+  return (
+    <Link href="/contact">
+      <button
+        className="text-white font-bold text-base uppercase tracking-wide mb-5 bg-[#ff0000]"
+        style={{
+          padding: '16px 40px',
+          borderRadius: '6px',
+          boxShadow: 'var(--shadow-red-lg)',
+          transition: 'all 0.2s ease-in-out',
+          display: 'inline-block',
+        }}
+        onMouseEnter={e => {
+          const b = e.currentTarget as HTMLButtonElement
+          b.style.backgroundColor = '#E53935'
+          b.style.transform = 'translateY(-3px)'
+          b.style.boxShadow = '0 20px 40px -6px rgb(255 0 0 / 0.40)'
+        }}
+        onMouseLeave={e => {
+          const b = e.currentTarget as HTMLButtonElement
+          b.style.backgroundColor = '#ff0000'
+          b.style.transform = 'translateY(0)'
+          b.style.boxShadow = 'var(--shadow-red-lg)'
+        }}
+      >
+        Get Free Trial
+      </button>
+    </Link>
+  )
+}
+
+// ─── Primary Button ───────────────────────────────────────────────────────────
+export function PrimaryButton({ children, href }: { children: React.ReactNode; href: string }) {
+  return (
+    <Link href={href}>
+      <button
+        className="bg-[#ff0000] text-white font-bold text-sm rounded-full"
+        style={{
+          padding: '12px 32px',
+          boxShadow: 'var(--shadow-red)',
+          transition: 'all 0.2s ease-in-out',
+        }}
+        onMouseEnter={e => {
+          const b = e.currentTarget as HTMLButtonElement
+          b.style.backgroundColor = '#E53935'
+          b.style.transform = 'translateY(-2px)'
+          b.style.boxShadow = 'var(--shadow-red-lg)'
+        }}
+        onMouseLeave={e => {
+          const b = e.currentTarget as HTMLButtonElement
+          b.style.backgroundColor = '#ff0000'
+          b.style.transform = 'translateY(0)'
+          b.style.boxShadow = 'var(--shadow-red)'
+        }}
+      >
+        {children}
+      </button>
+    </Link>
+  )
+}
+
+// ─── Outline Button ───────────────────────────────────────────────────────────
+export function OutlineButton({ children, href }: { children: React.ReactNode; href: string }) {
+  return (
+    <Link href={href}>
+      <button
+        className="text-[#ff0000] font-bold text-sm rounded-full"
+        style={{
+          padding: '11px 30px',
+          border: '2px solid #ff0000',
+          backgroundColor: 'transparent',
+          transition: 'all 0.2s ease-in-out',
+        }}
+        onMouseEnter={e => {
+          const b = e.currentTarget as HTMLButtonElement
+          b.style.backgroundColor = '#ff0000'
+          b.style.color = '#ffffff'
+          b.style.transform = 'translateY(-2px)'
+          b.style.boxShadow = 'var(--shadow-red)'
+        }}
+        onMouseLeave={e => {
+          const b = e.currentTarget as HTMLButtonElement
+          b.style.backgroundColor = 'transparent'
+          b.style.color = '#ff0000'
+          b.style.transform = 'translateY(0)'
+          b.style.boxShadow = 'none'
+        }}
+      >
+        {children}
+      </button>
+    </Link>
+  )
+}
+
+// ─── Feature Card ─────────────────────────────────────────────────────────────
+export function FeatureCard({ icon, title, description }: { icon: React.ReactNode; title: string; description: string }) {
+  return (
+    <div
+      className="bg-white rounded-2xl p-8 cursor-default"
+      style={{
+        boxShadow: 'var(--shadow-sm)',
+        border: '1px solid rgba(0,0,0,0.06)',
+        transition: 'all 0.22s ease-in-out',
+      }}
+      onMouseEnter={e => {
+        const el = e.currentTarget as HTMLDivElement
+        el.style.boxShadow = 'var(--shadow-lg)'
+        el.style.transform = 'translateY(-6px)'
+        el.style.borderColor = 'rgba(255,0,0,0.12)'
+      }}
+      onMouseLeave={e => {
+        const el = e.currentTarget as HTMLDivElement
+        el.style.boxShadow = 'var(--shadow-sm)'
+        el.style.transform = 'translateY(0)'
+        el.style.borderColor = 'rgba(0,0,0,0.06)'
+      }}
+    >
+      <div
+        className="w-14 h-14 rounded-xl flex items-center justify-center mb-5"
+        style={{ backgroundColor: 'rgba(255,0,0,0.07)' }}
+      >
+        {icon}
+      </div>
+      <h3 className="text-base font-bold text-gray-900 mb-3 leading-snug">{title}</h3>
+      <p className="text-gray-500 text-sm" style={{ lineHeight: '1.72' }}>{description}</p>
+    </div>
+  )
+}

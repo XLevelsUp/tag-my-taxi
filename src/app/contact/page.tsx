@@ -36,22 +36,22 @@ export default function ContactPage() {
 
               <div className="grid gap-8">
                 <ContactInfoItem 
-                  icon={<MapPin className="text-[#ff0000]" />} 
+                  icon={MapPin} 
                   title="Office Address" 
                   text="Business Center, Dubai, United Arab Emirates" 
                 />
                 <ContactInfoItem 
-                  icon={<Phone className="text-[#ff0000]" />} 
+                  icon={Phone} 
                   title="Phone Number" 
                   text="+971 4 123 4567" 
                 />
                 <ContactInfoItem 
-                  icon={<Mail className="text-[#ff0000]" />} 
+                  icon={Mail} 
                   title="Email Address" 
                   text="sales@tagmytaxi.ae" 
                 />
                 <ContactInfoItem 
-                  icon={<Clock className="text-[#ff0000]" />} 
+                  icon={Clock} 
                   title="Business Hours" 
                   text="Mon - Fri: 9:00 AM - 6:00 PM (GMT+4)" 
                 />
@@ -70,11 +70,11 @@ export default function ContactPage() {
   )
 }
 
-function ContactInfoItem({ icon, title, text }: any) {
+function ContactInfoItem({ icon: Icon, title, text }: any) {
   return (
     <div className="flex gap-6 items-start group">
-      <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center shrink-0 group-hover:bg-[#ff0000] group-hover:text-white transition-all duration-300 shadow-sm">
-        {icon}
+      <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center shrink-0 group-hover:bg-[#ff0000] transition-all duration-300 shadow-sm">
+        <Icon className="w-6 h-6 text-[#ff0000] group-hover:text-white transition-colors duration-300" />
       </div>
       <div className="space-y-1">
         <h4 className="font-black uppercase text-xs text-gray-400 tracking-widest">{title}</h4>
