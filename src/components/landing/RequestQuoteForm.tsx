@@ -142,12 +142,12 @@ export function RequestQuoteForm() {
           </svg>
         </div>
         <h3 className="text-2xl font-bold text-gray-900">Request Submitted!</h3>
-        <p className="text-gray-600 max-w-sm mx-auto text-sm leading-relaxed">
+        <p className="text-gray-600 max-w-sm mx-auto text-base leading-relaxed">
           Thank you for requesting a quote. Our team will review your fleet requirements and contact you within one business day.
         </p>
         <button
           onClick={() => setSuccess(false)}
-          className="text-sm font-black text-[#ff0000] uppercase tracking-wider pt-2 block mx-auto"
+          className="text-base font-black text-[#ff0000] uppercase tracking-wider pt-2 block mx-auto"
           style={{ transition: 'color 0.2s' }}
           onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.color = '#E53935' }}
           onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.color = '#ff0000' }}
@@ -261,7 +261,7 @@ export function RequestQuoteForm() {
 
       {error && (
         <div
-          className="p-4 rounded-xl text-xs font-semibold leading-relaxed"
+          className="p-4 rounded-xl text-base font-semibold leading-relaxed"
           style={{ backgroundColor: '#fef2f2', color: '#dc2626', border: '1px solid #fecaca' }}
           role="alert"
         >

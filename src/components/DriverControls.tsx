@@ -69,7 +69,7 @@ export function DriverControls({ initialIsOnline, availableRides: initialRides }
     <div className="space-y-6">
       <div className="flex items-center justify-between p-4 border rounded bg-gray-50">
         <div className="flex flex-col">
-          <span className="text-sm text-gray-500">Status</span>
+          <span className="text-base text-gray-500">Status</span>
           <span className={`font-bold ${isOnline ? 'text-green-600' : 'text-red-600'}`}>
             {isOnline ? 'Online' : 'Offline'}
           </span>
@@ -83,15 +83,15 @@ export function DriverControls({ initialIsOnline, availableRides: initialRides }
         <div className="space-y-4">
           <h3 className="text-lg font-medium">Available Rides</h3>
           {rides.length === 0 ? (
-            <p className="text-gray-500 text-sm italic">No ride requests at the moment.</p>
+            <p className="text-gray-500 text-base italic">No ride requests at the moment.</p>
           ) : (
             <div className="space-y-3">
               {rides.map((ride: any) => (
                 <div key={ride.id} className="p-4 border rounded-lg bg-white shadow-sm flex justify-between items-center">
                   <div className="space-y-1">
-                    <p className="text-sm font-medium">From: {ride.pickup_address}</p>
-                    <p className="text-sm font-medium">To: {ride.dropoff_address}</p>
-                    <p className="text-xs text-gray-400">{new Date(ride.requested_at).toLocaleTimeString()}</p>
+                    <p className="text-base font-medium">From: {ride.pickup_address}</p>
+                    <p className="text-base font-medium">To: {ride.dropoff_address}</p>
+                    <p className="text-base text-gray-400">{new Date(ride.requested_at).toLocaleTimeString()}</p>
                   </div>
                   <Button size="sm" onClick={() => handleAcceptRide(ride.id)} disabled={loading}>
                     Accept

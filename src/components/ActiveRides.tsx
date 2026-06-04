@@ -56,11 +56,11 @@ export function ActiveRides({ initialRides, userId }: ActiveRidesProps) {
           <div key={ride.id} className="p-4 border rounded-lg bg-blue-50 border-blue-100 flex justify-between items-center">
             <div>
               <p className="font-medium text-blue-900">Status: {ride.status}</p>
-              <p className="text-sm text-blue-700">From: {ride.pickup_address}</p>
-              <p className="text-sm text-blue-700">To: {ride.dropoff_address}</p>
+              <p className="text-base text-blue-700">From: {ride.pickup_address}</p>
+              <p className="text-base text-blue-700">To: {ride.dropoff_address}</p>
             </div>
             <div className="text-right">
-              <p className="text-xs text-blue-500">{new Date(ride.requested_at).toLocaleTimeString()}</p>
+              <p className="text-base text-blue-500">{new Date(ride.requested_at).toLocaleTimeString()}</p>
             </div>
           </div>
         ))}

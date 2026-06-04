@@ -110,7 +110,7 @@ function PortfolioRow({
           {/* Text side */}
           <div className="flex-1 space-y-4">
             <h2 className="text-2xl font-bold text-gray-900">{title}</h2>
-            <p className="text-gray-600 text-sm leading-relaxed">{description}</p>
+            <p className="text-gray-600 text-base leading-relaxed">{description}</p>
           </div>
           {/* Image side */}
           <div className="flex-shrink-0">
@@ -134,7 +134,7 @@ export default function PortfolioPage() {
       {/* Header */}
       <header className="pt-40 pb-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-3">
-          <span className="text-[#ff0000] font-bold uppercase tracking-widest text-xs">Our Work</span>
+          <span className="text-[#ff0000] font-bold uppercase tracking-widest text-base">Our Work</span>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">Portfolio</h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Trusted by taxi companies and startups across 42+ countries
@@ -157,7 +157,7 @@ export default function PortfolioPage() {
             Join 500+ taxi companies and startups that trust TagMyTaxi to power their operations.
           </p>
           <Link href="/contact">
-            <button className="bg-white text-[#ff0000] hover:bg-red-100 font-bold px-10 py-4 rounded-full transition-colors text-sm uppercase tracking-widest">
+            <button className="bg-white text-[#ff0000] hover:bg-red-100 font-bold px-10 py-4 rounded-full transition-colors text-base uppercase tracking-widest">
               Get a Free Demo
             </button>
           </Link>

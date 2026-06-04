@@ -99,49 +99,49 @@ export function ContactForm() {
         <form onSubmit={handleSubmit} className="space-y-8 relative z-10">
           <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <label className="text-xs font-black uppercase tracking-widest text-gray-500">First Name *</label>
+              <label className="text-base font-black uppercase tracking-widest text-gray-500">First Name *</label>
               <input 
                 type="text" 
                 name="firstName"
                 required
                 value={formData.firstName}
                 onChange={handleChange}
-                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-sm text-gray-700" 
+                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-base text-gray-700" 
                 placeholder="John" 
               />
             </div>
             <div className="space-y-2">
-              <label className="text-xs font-black uppercase tracking-widest text-gray-500">Last Name</label>
+              <label className="text-base font-black uppercase tracking-widest text-gray-500">Last Name</label>
               <input 
                 type="text" 
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-sm text-gray-700" 
+                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-base text-gray-700" 
                 placeholder="Doe" 
               />
             </div>
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-black uppercase tracking-widest text-gray-500">Work Email *</label>
+            <label className="text-base font-black uppercase tracking-widest text-gray-500">Work Email *</label>
             <input 
               type="email" 
               name="email"
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-sm text-gray-700" 
+              className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-base text-gray-700" 
               placeholder="john@company.com" 
             />
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-black uppercase tracking-widest text-gray-500">Fleet Size</label>
+            <label className="text-base font-black uppercase tracking-widest text-gray-500">Fleet Size</label>
             <div className="relative">
               <select 
                 name="fleetSize"
                 value={formData.fleetSize}
                 onChange={handleChange}
-                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-sm text-gray-700 appearance-none cursor-pointer"
+                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-base text-gray-700 appearance-none cursor-pointer"
               >
                 <option>1 - 10 vehicles</option>
                 <option>11 - 50 vehicles</option>
@@ -156,19 +156,19 @@ export function ContactForm() {
             </div>
           </div>
           <div className="space-y-2">
-            <label className="text-xs font-black uppercase tracking-widest text-gray-500">Message *</label>
+            <label className="text-base font-black uppercase tracking-widest text-gray-500">Message *</label>
             <textarea 
               name="message"
               required
               value={formData.message}
               onChange={handleChange}
-              className="w-full h-40 bg-gray-50 border border-gray-200 rounded-3xl p-6 focus:outline-none focus:border-[#ff0000] transition-colors resize-none text-sm text-gray-700" 
+              className="w-full h-40 bg-gray-50 border border-gray-200 rounded-3xl p-6 focus:outline-none focus:border-[#ff0000] transition-colors resize-none text-base text-gray-700" 
               placeholder="Tell us about your business goals..."
             />
           </div>
 
           {error && (
-            <div className="p-4 rounded-xl bg-red-50 text-red-600 text-xs font-semibold leading-relaxed border border-red-100">
+            <div className="p-4 rounded-xl bg-red-50 text-red-600 text-base font-semibold leading-relaxed border border-red-100">
               {error}
             </div>
           )}

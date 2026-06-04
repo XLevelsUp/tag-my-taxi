@@ -39,7 +39,7 @@ export function PrimaryButton({ children, href }: { children: React.ReactNode; h
   return (
     <Link href={href}>
       <button
-        className="bg-[#ff0000] text-white font-bold text-sm rounded-full"
+        className="bg-[#ff0000] text-white font-bold text-base rounded-full"
         style={{
           padding: '12px 32px',
           boxShadow: 'var(--shadow-red)',
@@ -69,7 +69,7 @@ export function OutlineButton({ children, href }: { children: React.ReactNode; h
   return (
     <Link href={href}>
       <button
-        className="text-[#ff0000] font-bold text-sm rounded-full"
+        className="text-[#ff0000] font-bold text-base rounded-full"
         style={{
           padding: '11px 30px',
           border: '2px solid #ff0000',
@@ -127,7 +127,7 @@ export function FeatureCard({ icon, title, description }: { icon: React.ReactNod
         {icon}
       </div>
       <h3 className="text-base font-bold text-gray-900 mb-3 leading-snug">{title}</h3>
-      <p className="text-gray-500 text-sm" style={{ lineHeight: '1.72' }}>{description}</p>
+      <p className="text-gray-500 text-base" style={{ lineHeight: '1.72' }}>{description}</p>
     </div>
   )
 }

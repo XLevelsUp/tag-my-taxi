@@ -104,12 +104,12 @@ function NumberedFeatureList({ features }: { features: { title: string; desc: st
     <ul className="space-y-8">
       {features.map((f, i) => (
         <li key={i} className="flex gap-5 items-start">
-          <span className="flex-shrink-0 w-9 h-9 rounded-full border-2 border-[#ff0000] text-[#ff0000] font-bold text-sm flex items-center justify-center">
+          <span className="flex-shrink-0 w-9 h-9 rounded-full border-2 border-[#ff0000] text-[#ff0000] font-bold text-base flex items-center justify-center">
             {i + 1}
           </span>
           <div>
             <h3 className="font-bold text-gray-900 text-base mb-1">{f.title}</h3>
-            <p className="text-gray-600 text-sm leading-relaxed">{f.desc}</p>
+            <p className="text-gray-600 text-base leading-relaxed">{f.desc}</p>
           </div>
         </li>
       ))}
@@ -151,7 +151,7 @@ export default function FeaturesPage() {
       {/* Page Header */}
       <header className="pt-40 pb-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-3">
-          <span className="text-[#ff0000] font-bold uppercase tracking-widest text-xs">Platform Overview</span>
+          <span className="text-[#ff0000] font-bold uppercase tracking-widest text-base">Platform Overview</span>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
             Features
           </h1>
@@ -231,7 +231,7 @@ export default function FeaturesPage() {
                 <div key={i} className="text-center px-4">
                   <div className="flex justify-center mb-4">{f.icon}</div>
                   <h3 className="font-bold text-gray-900 text-base mb-2">{f.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
+                  <p className="text-gray-500 text-base leading-relaxed">{f.desc}</p>
                 </div>
               ))}
             </div>
@@ -246,7 +246,7 @@ export default function FeaturesPage() {
               Join the global network of transportation leaders using TagMyTaxi to scale their operations.
             </p>
             <Link href="/contact">
-              <button className="bg-white text-[#ff0000] hover:bg-red-100 font-bold px-10 py-4 rounded-full transition-colors text-sm uppercase tracking-widest">
+              <button className="bg-white text-[#ff0000] hover:bg-red-100 font-bold px-10 py-4 rounded-full transition-colors text-base uppercase tracking-widest">
                 Get a Free Demo
               </button>
             </Link>

@@ -36,7 +36,7 @@ export default async function DashboardPage() {
       <header className="bg-white shadow px-6 py-4 flex justify-between items-center">
         <h1 className="text-xl font-bold">TagMyTaxi Dashboard</h1>
         <div className="flex items-center gap-4">
-          <span className="text-sm text-gray-500">{user.email} ({role})</span>
+          <span className="text-base text-gray-500">{user.email} ({role})</span>
           <form action={logout}>
             <Button variant="outline" size="sm">Logout</Button>
           </form>
@@ -72,15 +72,15 @@ export default async function DashboardPage() {
                     <h3 className="text-lg font-medium">Admin Overview</h3>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                         <div className="p-4 border rounded text-center bg-gray-50">
-                            <p className="text-sm text-gray-500">Active Rides</p>
+                            <p className="text-base text-gray-500">Active Rides</p>
                             <p className="text-2xl font-bold">0</p>
                         </div>
                         <div className="p-4 border rounded text-center bg-gray-50">
-                            <p className="text-sm text-gray-500">Online Drivers</p>
+                            <p className="text-base text-gray-500">Online Drivers</p>
                             <p className="text-2xl font-bold">0</p>
                         </div>
                         <div className="p-4 border rounded text-center bg-gray-50">
-                            <p className="text-sm text-gray-500">Today's Revenue</p>
+                            <p className="text-base text-gray-500">Today's Revenue</p>
                             <p className="text-2xl font-bold">$0</p>
                         </div>
                     </div>

@@ -222,7 +222,7 @@ export default async function Home() {
               <div className="text-center mb-10">
                 <div className="inline-flex items-center gap-2 mb-3">
                   <span className="w-6 h-[2px] bg-[#ff0000] rounded-full" />
-                  <span className="text-[#ff0000] font-bold uppercase tracking-widest text-xs">REQUEST A QUOTE</span>
+                  <span className="text-[#ff0000] font-bold uppercase tracking-widest text-base">REQUEST A QUOTE</span>
                   <span className="w-6 h-[2px] bg-[#ff0000] rounded-full" />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2">Get a Free Demo</h2>
@@ -248,7 +248,7 @@ function StatItem({ value, label }: { value: string, label: string }) {
       >
         {value}
       </div>
-      <div className="text-sm text-gray-500 font-medium tracking-wide uppercase">{label}</div>
+      <div className="text-base text-gray-500 font-medium tracking-wide uppercase">{label}</div>
     </div>
   )
 }

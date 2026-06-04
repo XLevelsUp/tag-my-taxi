@@ -14,7 +14,7 @@ export default function ContactPage() {
       {/* Header */}
       <header className="pt-40 pb-24 bg-gray-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-6">
-          <span className="text-[#ff0000] font-black uppercase tracking-[0.3em] text-xs">Get In Touch</span>
+          <span className="text-[#ff0000] font-black uppercase tracking-[0.3em] text-base">Get In Touch</span>
           <h1 className="text-4xl lg:text-7xl font-black uppercase tracking-tight">
             Ready to scale your <br /> <span className="text-[#ff0000]">Taxi Fleet?</span>
           </h1>
@@ -77,7 +77,7 @@ function ContactInfoItem({ icon: Icon, title, text }: any) {
         <Icon className="w-6 h-6 text-[#ff0000] group-hover:text-white transition-colors duration-300" />
       </div>
       <div className="space-y-1">
-        <h4 className="font-black uppercase text-xs text-gray-400 tracking-widest">{title}</h4>
+        <h4 className="font-black uppercase text-base text-gray-400 tracking-widest">{title}</h4>
         <p className="text-lg font-bold tracking-tight">{text}</p>
       </div>
     </div>

@@ -142,7 +142,7 @@ export default function AboutPage() {
                 <p className="text-lg font-bold text-gray-800 leading-snug">
                   We are agile, versatile, smart, responsive, and adaptive.
                 </p>
-                <p className="text-gray-600 text-sm leading-relaxed" style={{ lineHeight: '1.8' }}>
+                <p className="text-gray-600 text-base leading-relaxed" style={{ lineHeight: '1.8' }}>
                   Tagmytaxi is a dedicated group of people focused on pushing the limits in the taxi dispatch
                   industry producing amazing applications. We have 100% commitment toward fulfiling all your
                   taxi business needs and making it simple for you to meet your customer expectations. It is
@@ -285,7 +285,7 @@ export default function AboutPage() {
                               }}
                             >
                               <div
-                                className="inline-block text-white font-bold text-xs px-4 py-1.5 rounded-full mb-3"
+                                className="inline-block text-white font-bold text-base px-4 py-1.5 rounded-full mb-3"
                                 style={{
                                   backgroundColor: ev.color,
                                   boxShadow: `0 4px 12px -2px ${ev.color}50`,
@@ -293,8 +293,8 @@ export default function AboutPage() {
                               >
                                 {ev.year}
                               </div>
-                              <h3 className="font-bold text-gray-900 text-sm mb-2 leading-snug">{ev.title}</h3>
-                              <p className="text-gray-500 text-xs leading-relaxed">{ev.desc}</p>
+                              <h3 className="font-bold text-gray-900 text-base mb-2 leading-snug">{ev.title}</h3>
+                              <p className="text-gray-500 text-base leading-relaxed">{ev.desc}</p>
                             </div>
                           </div>
                           {/* Right spacer */}
@@ -314,7 +314,7 @@ export default function AboutPage() {
                               }}
                             >
                               <div
-                                className="inline-block text-white font-bold text-xs px-4 py-1.5 rounded-full mb-3"
+                                className="inline-block text-white font-bold text-base px-4 py-1.5 rounded-full mb-3"
                                 style={{
                                   backgroundColor: ev.color,
                                   boxShadow: `0 4px 12px -2px ${ev.color}50`,
@@ -322,8 +322,8 @@ export default function AboutPage() {
                               >
                                 {ev.year}
                               </div>
-                              <h3 className="font-bold text-gray-900 text-sm mb-2 leading-snug">{ev.title}</h3>
-                              <p className="text-gray-500 text-xs leading-relaxed">{ev.desc}</p>
+                              <h3 className="font-bold text-gray-900 text-base mb-2 leading-snug">{ev.title}</h3>
+                              <p className="text-gray-500 text-base leading-relaxed">{ev.desc}</p>
                             </div>
                           </div>
                         </>
@@ -358,7 +358,7 @@ export default function AboutPage() {
                 <p className="text-lg font-bold text-gray-800 leading-snug">
                   It&apos;s our unique set of qualities that set us apart.
                 </p>
-                <p className="text-gray-600 text-sm" style={{ lineHeight: '1.8' }}>
+                <p className="text-gray-600 text-base" style={{ lineHeight: '1.8' }}>
                   Tagmytaxi represents the way we work together toward our goal. We build an environment
                   for creative talents to bloom and make innovative, creative, and flexible solutions
                   possible. We believe we can change the world for the better, and we strive to connect

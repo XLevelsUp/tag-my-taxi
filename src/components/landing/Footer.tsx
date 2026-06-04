@@ -15,7 +15,7 @@ function FooterLink({ href, children }: { href: string, children: React.ReactNod
     <li>
       <Link
         href={href}
-        className="text-gray-500 text-sm hover:text-[#ff0000] group"
+        className="text-gray-500 text-base hover:text-[#ff0000] group"
         style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', transition: 'all 0.2s ease-in-out' }}
       >
         <span
@@ -79,14 +79,14 @@ export function Footer() {
             >
               Contact Us
             </h4>
-            <div className="space-y-4 text-sm text-gray-500" style={{ lineHeight: '1.7' }}>
+            <div className="space-y-4 text-base text-gray-500" style={{ lineHeight: '1.7' }}>
               <div>
                 <p>2603 Camino Ramon,</p>
                 <p>#409 San Ramon, CA 94583</p>
                 <p>+1 (202) 657-6901</p>
               </div>
               <div>
-                <p className="font-semibold text-gray-700 text-xs uppercase tracking-widest mb-1">Dubai Marina</p>
+                <p className="font-semibold text-gray-700 text-base uppercase tracking-widest mb-1">Dubai Marina</p>
                 <p>+91 8248729959</p>
               </div>
             </div>
@@ -130,14 +130,14 @@ export function Footer() {
               <Link
                 key={label}
                 href="#"
-                className="text-xs text-gray-500 hover:text-[#ff0000]"
+                className="text-base text-gray-500 hover:text-[#ff0000]"
                 style={{ transition: 'color 0.2s' }}
               >
                 {label}
               </Link>
             ))}
           </div>
-          <p className="text-xs text-gray-400">© {new Date().getFullYear()}, Tagmytaxi.com All Rights Reserved.</p>
+          <p className="text-base text-gray-400">© {new Date().getFullYear()}, Tagmytaxi.com All Rights Reserved.</p>
         </div>
       </div>
     </footer>

@@ -43,8 +43,8 @@ export function BookingForm() {
         <Input id="dropoff" name="dropoff" placeholder="Enter destination" required />
       </div>
       
-      {error && <p className="text-sm text-red-500">{error}</p>}
-      {success && <p className="text-sm text-green-500">Ride requested successfully!</p>}
+      {error && <p className="text-base text-red-500">{error}</p>}
+      {success && <p className="text-base text-green-500">Ride requested successfully!</p>}
       
       <Button type="submit" className="w-full" disabled={loading}>
         {loading ? 'Requesting...' : 'Request Ride'}

@@ -78,7 +78,7 @@ export function CountUpStat({
         {formatted}
         <span style={{ color: '#ff0000' }}>{suffix}</span>
       </div>
-      <div className="text-sm text-gray-500 font-medium tracking-wide uppercase mt-2">
+      <div className="text-base text-gray-500 font-medium tracking-wide uppercase mt-2">
         {label}
       </div>
     </div>
@@ -126,7 +126,7 @@ export function WhyCard({
         {icon}
       </div>
       <h3 className="font-bold text-gray-900 text-base mb-2">{title}</h3>
-      <p className="text-gray-500 text-sm leading-relaxed">{desc}</p>
+      <p className="text-gray-500 text-base leading-relaxed">{desc}</p>
     </div>
   )
 }
@@ -166,7 +166,7 @@ export function ProcessStep({
     >
       {/* Step number */}
       <span
-        className="text-xs font-black mb-3 block"
+        className="text-base font-black mb-3 block"
         style={{ color: '#ff0000', letterSpacing: '0.08em', opacity: 0.6 }}
       >
         {step}
@@ -178,7 +178,7 @@ export function ProcessStep({
       >
         {icon}
       </div>
-      <span className="text-sm font-semibold text-gray-700">{label}</span>
+      <span className="text-base font-semibold text-gray-700">{label}</span>
     </div>
   )
 }

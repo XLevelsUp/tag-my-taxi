@@ -60,7 +60,7 @@ export function Navbar() {
           <Link
             key={link.href}
             href={link.href}
-            className={`relative text-xs font-bold uppercase tracking-wider group ${isActive(link.href) ? 'text-[#ff0000]' : 'text-gray-800'}`}
+            className={`relative text-base font-bold uppercase tracking-wider group ${isActive(link.href) ? 'text-[#ff0000]' : 'text-gray-800'}`}
             style={{ transition: 'color 0.2s ease-in-out' }}
           >
             <span
@@ -87,7 +87,7 @@ export function Navbar() {
         ))}
         <Link href="/contact">
           <button
-            className="bg-[#ff0000] text-white font-bold uppercase tracking-wider text-xs px-6 py-2.5 rounded"
+            className="bg-[#ff0000] text-white font-bold uppercase tracking-wider text-base px-6 py-2.5 rounded"
             style={{
               boxShadow: 'var(--shadow-md)',
               transition: 'all 0.2s ease-in-out',
@@ -137,7 +137,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-bold uppercase tracking-widest ${isActive(link.href) ? 'text-[#ff0000]' : 'text-gray-900'}`}
+                className={`text-base font-bold uppercase tracking-widest ${isActive(link.href) ? 'text-[#ff0000]' : 'text-gray-900'}`}
                 style={{ transition: 'color 0.2s' }}
                 onClick={() => setIsOpen(false)}
               >
@@ -145,7 +145,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link href="/contact" onClick={() => setIsOpen(false)}>
-              <button className="w-full bg-[#ff0000] text-white font-bold uppercase tracking-wider text-xs px-6 py-4 rounded" style={{ boxShadow: 'var(--shadow-red)' }}>
+              <button className="w-full bg-[#ff0000] text-white font-bold uppercase tracking-wider text-base px-6 py-4 rounded" style={{ boxShadow: 'var(--shadow-red)' }}>
                 GET STARTED
               </button>
             </Link>

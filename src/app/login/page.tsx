@@ -59,7 +59,7 @@ export default function LoginPage() {
               <Input id="password" name="password" type="password" required />
             </div>
 
-            {error && <p className="text-sm text-red-500">{error}</p>}
+            {error && <p className="text-base text-red-500">{error}</p>}
             
             <Button type="submit" className="w-full">
               {isLogin ? 'Sign In' : 'Sign Up'}
