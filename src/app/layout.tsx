@@ -15,6 +15,11 @@ const dmSans = DM_Sans({
 export const metadata: Metadata = {
   title: "Taxi Dispatch Software | Taxi Booking App | Taxi Booking Software | Taxi Management Software | TagMyTaxi",
   description: "TagMyTaxi – On-demand taxi dispatch software to build an Uber-like business. White-label taxi solution, real-time tracking, and seamless fleet management.",
+  icons: {
+    icon: "/tagmytaxilogo.jpg",
+    shortcut: "/tagmytaxilogo.jpg",
+    apple: "/tagmytaxilogo.jpg",
+  },
 };
 
 export default function RootLayout({

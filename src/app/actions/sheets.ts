@@ -38,6 +38,7 @@ export async function submitToGoogleSheets(data: FormSubmissionData) {
       },
       body: JSON.stringify({
         ...data,
+        countryCode: data.countryCode ? `'${data.countryCode}` : data.countryCode,
         submittedAt: new Date().toISOString(),
       }),
     })
