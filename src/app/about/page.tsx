@@ -111,9 +111,9 @@ export default function AboutPage() {
       <main className="flex-1">
 
         {/* ── What We Do ── */}
-        <section className="py-24 bg-white">
+        <section className="py-16 md:py-24 bg-white">
           <div className="max-w-5xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <FadeIn delay={0.2} direction="right" className="flex justify-center">
                 <Image
                   src="/phone_app_illustration.png"
@@ -167,7 +167,7 @@ export default function AboutPage() {
           }}
         >
           <div className="max-w-4xl mx-auto px-6">
-            <div className="grid grid-cols-3 gap-4 text-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-4 text-center">
               {/* Dividers between items */}
               <div className="relative">
                 <CountUpStat value="10+" label="Products" duration={1800} />
@@ -189,7 +189,7 @@ export default function AboutPage() {
         </section>
 
         {/* ── Why Choose Us ── */}
-        <section className="py-24 bg-white">
+        <section className="py-16 md:py-24 bg-white">
           <div className="max-w-5xl mx-auto px-6">
             <FadeIn delay={0.1} direction="up" className="text-center mb-14">
               <span
@@ -232,7 +232,7 @@ export default function AboutPage() {
         <div className="w-full h-[3px] bg-[#ff0000]" />
 
         {/* ── Timeline ── */}
-        <section className="py-24 bg-white">
+        <section className="py-16 md:py-24 bg-white">
           <div className="max-w-4xl mx-auto px-6">
             <FadeIn delay={0.1} direction="up" className="text-center mb-16">
               <h2
@@ -337,9 +337,9 @@ export default function AboutPage() {
         </section>
 
         {/* ── How We Work ── */}
-        <section className="py-24 bg-gray-50">
+        <section className="py-16 md:py-24 bg-gray-50">
           <div className="max-w-5xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <FadeIn delay={0.2} direction="right" className="space-y-6">
                 <div>
                   <span
@@ -382,7 +382,7 @@ export default function AboutPage() {
         </section>
 
         {/* ── Our Process to Success ── */}
-        <section className="py-24 bg-white" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
+        <section className="py-16 md:py-24 bg-white" style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}>
           <div className="max-w-5xl mx-auto px-6">
             <FadeIn delay={0.1} direction="up" className="text-center mb-14">
               <span

@@ -22,9 +22,9 @@ export default function ContactPage() {
         </div>
       </header>
 
-      <main className="flex-1 py-24">
+      <main className="flex-1 py-12 md:py-24">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="grid lg:grid-cols-2 gap-20">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
             {/* Contact Info */}
             <div className="space-y-12">
               <div className="space-y-6">

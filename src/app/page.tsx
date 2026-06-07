@@ -45,7 +45,7 @@ export default async function Home() {
           style={{ background: 'linear-gradient(to bottom, transparent, rgba(0,0,0,0.30))' }}
         />
 
-        <FadeIn delay={0.2} direction="up" className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto py-28">
+        <FadeIn delay={0.2} direction="up" className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto py-20 md:py-28">
           <h1
             className="text-4xl md:text-5xl lg:text-[56px] font-extrabold leading-tight mb-6 text-white"
             style={{
@@ -69,9 +69,9 @@ export default async function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-white" style={{ borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
+      <section className="py-12 md:py-16 bg-white" style={{ borderBottom: '1px solid rgba(0,0,0,0.06)' }}>
         <FadeIn delay={0.2} direction="up" className="max-w-5xl mx-auto px-6">
-          <div className="grid grid-cols-3 gap-8 text-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <StatItem value="500+" label="Taxi companies & startups" />
             <StatItem value="42" label="Countries" />
             <StatItem value="50,000+" label="Vehicles" />
@@ -83,7 +83,7 @@ export default async function Home() {
       <div className="w-full h-[3px] bg-[#ff0000]" />
 
       {/* A Reliable Uber Clone Section */}
-      <section className="py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <FadeIn delay={0.1} direction="up" className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -130,9 +130,9 @@ export default async function Home() {
       </section>
 
       {/* An Uber-Clone Taxi Application Like No Other */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <FadeIn delay={0.2} direction="right" className="space-y-7">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                 An Uber-Clone Taxi Application Like No Other
@@ -157,9 +157,9 @@ export default async function Home() {
       </section>
 
       {/* Drive More Business With An App Like Uber */}
-      <section className="py-24 bg-white">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <FadeIn delay={0.2} direction="right" className="flex justify-center">
               <Image
                 src="/taxi-app.png"
@@ -183,9 +183,9 @@ export default async function Home() {
       </section>
 
       {/* Uber Clone Solutions Designed For Businesses Like Yours */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <FadeIn delay={0.2} direction="right" className="space-y-7">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
                 Uber Clone Solutions Designed For Businesses Like Yours
@@ -209,7 +209,7 @@ export default async function Home() {
       </section>
 
       {/* Request A Quote Section */}
-      <section className="py-24" style={{ background: 'linear-gradient(to bottom, #f9fafb, #ffffff)' }}>
+      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(to bottom, #f9fafb, #ffffff)' }}>
         <div className="max-w-3xl mx-auto px-6">
           <FadeIn delay={0.2} direction="up">
             <div

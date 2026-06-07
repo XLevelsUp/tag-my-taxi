@@ -10,9 +10,9 @@ export default function SolutionsPage() {
       <Navbar />
 
       {/* Delivery Planning Section */}
-      <section className="py-20 bg-white">
+      <section className="py-12 md:py-20 bg-white">
         <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             {/* Left: Text */}
             <div className="space-y-6">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -48,7 +48,7 @@ export default function SolutionsPage() {
       </section>
 
       {/* CTA Banner */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-12 md:py-20 bg-gray-50">
         <div className="max-w-4xl mx-auto px-6 text-center space-y-8">
           <h2 className="text-3xl md:text-4xl font-light text-gray-700 leading-snug">
             With Tagmytaxi, step up your delivery business game and scale your growth

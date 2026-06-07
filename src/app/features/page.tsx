@@ -165,9 +165,9 @@ export default function FeaturesPage() {
       <main className="flex-1">
 
         {/* ── Passenger application ── */}
-        <section className="py-20 bg-white">
+        <section className="py-12 md:py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-10">Passenger application</h2>
                 <NumberedFeatureList features={passengerFeatures} />
@@ -180,9 +180,9 @@ export default function FeaturesPage() {
         <div className="w-full h-px bg-gray-100" />
 
         {/* ── Driver application ── */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-12 md:py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <PhoneMockup src="/taxi_ride_illustration.png" alt="Driver App" />
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-10">Driver application</h2>
@@ -195,9 +195,9 @@ export default function FeaturesPage() {
         <div className="w-full h-px bg-gray-100" />
 
         {/* ── Dispatcher panel ── */}
-        <section className="py-20 bg-white">
+        <section className="py-12 md:py-20 bg-white">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-10">Dispatcher panel</h2>
                 <NumberedFeatureList features={dispatcherFeatures} />
@@ -210,9 +210,9 @@ export default function FeaturesPage() {
         <div className="w-full h-px bg-gray-100" />
 
         {/* ── Admin panel ── */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-12 md:py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-6">
-            <div className="grid md:grid-cols-2 gap-16 items-center">
+            <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <DashboardMockup src="/business_growth_illustration.png" alt="Admin Panel" />
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-10">Admin panel</h2>
@@ -223,7 +223,7 @@ export default function FeaturesPage() {
         </section>
 
         {/* ── More Features ── */}
-        <section className="py-20 bg-white border-t border-gray-100">
+        <section className="py-12 md:py-20 bg-white border-t border-gray-100">
           <div className="max-w-6xl mx-auto px-6">
             <h2 className="text-3xl font-bold text-gray-900 text-center mb-14">More Features</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-10 gap-y-12">
@@ -239,7 +239,7 @@ export default function FeaturesPage() {
         </section>
 
         {/* ── CTA ── */}
-        <section className="py-16 bg-[#ff0000] text-white text-center">
+        <section className="py-12 md:py-16 bg-[#ff0000] text-white text-center">
           <div className="max-w-2xl mx-auto px-6 space-y-6">
             <h2 className="text-3xl font-bold">Ready to upgrade your fleet?</h2>
             <p className="text-red-100">

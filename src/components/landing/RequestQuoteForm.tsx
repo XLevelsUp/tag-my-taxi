@@ -8,7 +8,9 @@ const inputBase: React.CSSProperties = {
   width: '100%',
   height: '52px',
   backgroundColor: '#f9fafb',
-  border: '1.5px solid #e5e7eb',
+  borderWidth: '1.5px',
+  borderStyle: 'solid',
+  borderColor: '#e5e7eb',
   borderRadius: '12px',
   padding: '0 20px',
   fontSize: '16px',
@@ -109,6 +111,7 @@ export function RequestQuoteForm() {
           category: 'Form Submission',
           label: 'Request Quote Form',
         })
+        gtag.trackConversion('AW-17760687003/PXr2CPzF9s0bEJun-pRC')
 
         setSuccess(true)
         setFormData({
