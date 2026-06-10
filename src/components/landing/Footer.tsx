@@ -15,7 +15,7 @@ function FooterLink({ href, children }: { href: string, children: React.ReactNod
     <li>
       <Link
         href={href}
-        className="text-gray-500 text-base hover:text-[#ff0000] group"
+        className="text-gray-600 text-base hover:text-[#ff0000] group"
         style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', transition: 'all 0.2s ease-in-out' }}
       >
         <span
@@ -40,12 +40,12 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
           {/* Company */}
           <div>
-            <h4
+            <h3
               className="font-bold text-gray-800 mb-6"
               style={{ fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.12em' }}
             >
               Company
-            </h4>
+            </h3>
             <ul className="space-y-3">
               <FooterLink href="/about">About Us</FooterLink>
               <FooterLink href="#">FAQ</FooterLink>
@@ -56,12 +56,12 @@ export function Footer() {
 
           {/* More */}
           <div>
-            <h4
+            <h3
               className="font-bold text-gray-800 mb-6"
               style={{ fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.12em' }}
             >
               More
-            </h4>
+            </h3>
             <ul className="space-y-3">
               <FooterLink href="#">Uber Clone</FooterLink>
               <FooterLink href="/features">Features</FooterLink>
@@ -73,13 +73,13 @@ export function Footer() {
 
           {/* Contact Us */}
           <div>
-            <h4
+            <h3
               className="font-bold text-gray-800 mb-6"
               style={{ fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.12em' }}
             >
               Contact Us
-            </h4>
-            <div className="space-y-4 text-base text-gray-500" style={{ lineHeight: '1.7' }}>
+            </h3>
+            <div className="space-y-4 text-base text-gray-600" style={{ lineHeight: '1.7' }}>
               <div>
                 <p>2603 Camino Ramon,</p>
                 <p>#409 San Ramon, CA 94583</p>
@@ -94,12 +94,12 @@ export function Footer() {
 
           {/* Accreditation */}
           <div>
-            <h4
+            <h3
               className="font-bold text-gray-800 mb-6"
               style={{ fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.12em' }}
             >
               Accreditation
-            </h4>
+            </h3>
             <div className="space-y-4">
               <Image
                 src="/bas-iso-badge.png"
@@ -130,14 +130,14 @@ export function Footer() {
               <Link
                 key={label}
                 href="#"
-                className="text-base text-gray-500 hover:text-[#ff0000]"
+                className="text-base text-gray-600 hover:text-[#ff0000]"
                 style={{ transition: 'color 0.2s' }}
               >
                 {label}
               </Link>
             ))}
           </div>
-          <p className="text-base text-gray-400">© {new Date().getFullYear()}, Tagmytaxi.com All Rights Reserved.</p>
+          <p className="text-base text-gray-600">© {new Date().getFullYear()}, Tagmytaxi.com All Rights Reserved.</p>
         </div>
       </div>
     </footer>

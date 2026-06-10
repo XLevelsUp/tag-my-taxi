@@ -7,14 +7,15 @@ import Script from "next/script";
 const dmSans = DM_Sans({
   variable: "--font-sans",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700", "800"],
+  style: ["normal"],
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Taxi Dispatch Software | Taxi Booking App | Taxi Booking Software | Taxi Management Software | TagMyTaxi",
-  description: "TagMyTaxi – On-demand taxi dispatch software to build an Uber-like business. White-label taxi solution, real-time tracking, and seamless fleet management.",
+  title: "#1 Taxi Dispatch Software | Cloud-Based Taxi Booking Software | Fleet Management Software — TagMyTaxi",
+  description: "TagMyTaxi is the #1 cloud-based taxi dispatch software trusted by 500+ fleet operators in 42 countries. AI-powered dispatch, real-time GPS tracking, white-label taxi app for Android & iOS, and complete fleet management software. Start your free trial today.",
+  keywords: "taxi dispatch software, taxi clone app, taxi booking software, fleet management software, cloud-based taxi system, AI-powered dispatch, real-time GPS tracking, taxi app for Android & iOS, software for taxi company, dispatch management software, cloud taxi dispatch system, taxi software",
   icons: {
     icon: "/tagmytaxilogo.jpg",
     shortcut: "/tagmytaxilogo.jpg",
@@ -32,8 +33,12 @@ export default function RootLayout({
       lang="en"
       className={`${dmSans.variable} h-full antialiased`}
     >
+      <head>
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
+      </head>
         {/* Google Tag Manager */}
-        <Script id="google-tag-manager" strategy="afterInteractive">
+        <Script id="google-tag-manager" strategy="lazyOnload">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -61,11 +66,27 @@ export default function RootLayout({
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
+            
+            // Set default consent values to deny third-party ad tracking by default
+            gtag('consent', 'default', {
+              'ad_storage': 'denied',
+              'ad_user_data': 'denied',
+              'ad_personalization': 'denied',
+              'analytics_storage': 'granted',
+              'wait_for_update': 500
+            });
+
             gtag('js', new Date());
 
-            gtag('config', 'GT-P366V5Q4');
-            gtag('config', 'AW-633411275');
-            gtag('config', 'AW-17760687003');
+            gtag('config', 'GT-P366V5Q4', {
+              cookie_flags: 'SameSite=None;Secure'
+            });
+            gtag('config', 'AW-633411275', {
+              cookie_flags: 'SameSite=None;Secure'
+            });
+            gtag('config', 'AW-17760687003', {
+              cookie_flags: 'SameSite=None;Secure'
+            });
           `}
         </Script>
         {children}
