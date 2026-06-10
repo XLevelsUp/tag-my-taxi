@@ -6,8 +6,8 @@ const cspHeader = `
   default-src 'self';
   script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""} https://www.googletagmanager.com https://b.sf-syn.com;
   style-src 'self' 'unsafe-inline';
-  img-src 'self' blob: data: https://sourceforge.net https://www.googletagmanager.com https://www.google-analytics.com;
-  connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://b.sf-syn.com;
+  img-src 'self' blob: data: https://sourceforge.net https://www.googletagmanager.com https://www.google-analytics.com https://pagead2.googlesyndication.com https://www.google.com https://google.com https://*.doubleclick.net;
+  connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://stats.g.doubleclick.net https://b.sf-syn.com https://pagead2.googlesyndication.com https://www.google.com https://google.com https://*.doubleclick.net;
   font-src 'self' data:;
   object-src 'none';
   base-uri 'self';
