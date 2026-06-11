@@ -14,11 +14,11 @@ export default function ContactPage() {
       {/* Header */}
       <header className="pt-40 pb-24 bg-gray-50 border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-6">
-          <span className="text-[#ff0000] font-black uppercase tracking-[0.3em] text-base">Get In Touch</span>
+          <span className="text-[#dc2626] font-black uppercase tracking-[0.3em] text-base">Get In Touch</span>
           <h1 className="text-4xl lg:text-7xl font-black uppercase tracking-tight">
-            Ready to scale your <br /> <span className="text-[#ff0000]">Taxi Fleet?</span>
+            Ready to scale your <br /> <span className="text-[#dc2626]">Taxi Fleet?</span>
           </h1>
-          <div className="w-20 h-1 bg-[#ff0000] mx-auto mt-8"></div>
+          <div className="w-20 h-1 bg-[#dc2626] mx-auto mt-8"></div>
         </div>
       </header>
 
@@ -28,9 +28,9 @@ export default function ContactPage() {
             {/* Contact Info */}
             <div className="space-y-12">
               <div className="space-y-6">
-                <h2 className="text-3xl font-black uppercase tracking-tight">Contact <span className="text-[#ff0000]">Details</span></h2>
+                <h2 className="text-3xl font-black uppercase tracking-tight">Contact <span className="text-[#dc2626]">Details</span></h2>
                 <p className="text-lg text-gray-600 leading-relaxed max-w-md">
-                  Have questions about our platform? Our team of experts is ready to help you optimize your transportation business.
+                   Have questions about our platform? Our team of experts is ready to help you optimize your transportation business.
                 </p>
               </div>
 
@@ -73,8 +73,8 @@ export default function ContactPage() {
 function ContactInfoItem({ icon: Icon, title, text }: any) {
   return (
     <div className="flex gap-6 items-start group">
-      <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center shrink-0 group-hover:bg-[#ff0000] transition-all duration-300 shadow-sm">
-        <Icon className="w-6 h-6 text-[#ff0000] group-hover:text-white transition-colors duration-300" />
+      <div className="w-14 h-14 rounded-2xl bg-gray-50 flex items-center justify-center shrink-0 group-hover:bg-[#dc2626] transition-all duration-300 shadow-sm">
+        <Icon className="w-6 h-6 text-[#dc2626] group-hover:text-white transition-colors duration-300" />
       </div>
       <div className="space-y-1">
         <h4 className="font-black uppercase text-base text-gray-400 tracking-widest">{title}</h4>

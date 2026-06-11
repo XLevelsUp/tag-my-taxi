@@ -76,8 +76,8 @@ function AccordionItem({
     <div
       className="rounded-xl overflow-hidden"
       style={{
-        backgroundColor: isOpen ? 'rgba(255,0,0,0.03)' : '#ffffff',
-        border: isOpen ? '1px solid rgba(255,0,0,0.12)' : '1px solid rgba(0,0,0,0.06)',
+        backgroundColor: isOpen ? 'rgba(220,38,38,0.03)' : '#ffffff',
+        border: isOpen ? '1px solid rgba(220,38,38,0.12)' : '1px solid rgba(0,0,0,0.06)',
         transition: 'all 0.25s ease-in-out',
       }}
     >
@@ -91,7 +91,7 @@ function AccordionItem({
         <span
           className="font-bold text-base"
           style={{
-            color: isOpen ? '#ff0000' : '#111827',
+            color: isOpen ? '#dc2626' : '#111827',
             transition: 'color 0.2s ease-in-out',
           }}
         >
@@ -100,7 +100,7 @@ function AccordionItem({
         <span
           className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center"
           style={{
-            backgroundColor: isOpen ? '#ff0000' : 'rgba(0,0,0,0.05)',
+            backgroundColor: isOpen ? '#dc2626' : 'rgba(0,0,0,0.05)',
             transition: 'all 0.25s ease-in-out',
           }}
         >
@@ -143,11 +143,11 @@ export function FAQAccordion() {
         {/* Section header */}
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="w-6 h-[2px] bg-[#ff0000] rounded-full" />
-            <span className="text-[#ff0000] font-bold uppercase tracking-widest text-base">
+            <span className="w-6 h-[2px] bg-[#dc2626] rounded-full" />
+            <span className="text-[#dc2626] font-bold uppercase tracking-widest text-base">
               FAQ
             </span>
-            <span className="w-6 h-[2px] bg-[#ff0000] rounded-full" />
+            <span className="w-6 h-[2px] bg-[#dc2626] rounded-full" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Frequently Asked Questions About Our Taxi Dispatch Software

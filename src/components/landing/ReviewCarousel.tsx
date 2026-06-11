@@ -144,11 +144,11 @@ export function ReviewCarousel() {
         {/* Section header */}
         <div className="text-center mb-14">
           <div className="inline-flex items-center gap-2 mb-3">
-            <span className="w-6 h-[2px] bg-[#ff0000] rounded-full" />
-            <span className="text-[#ff0000] font-bold uppercase tracking-widest text-base">
+            <span className="w-6 h-[2px] bg-[#dc2626] rounded-full" />
+            <span className="text-[#dc2626] font-bold uppercase tracking-widest text-base">
               TESTIMONIALS
             </span>
-            <span className="w-6 h-[2px] bg-[#ff0000] rounded-full" />
+            <span className="w-6 h-[2px] bg-[#dc2626] rounded-full" />
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Trusted by Fleet Management Companies on 6&nbsp;Continents
@@ -218,7 +218,7 @@ export function ReviewCarousel() {
                     const el = e.currentTarget
                     el.style.boxShadow = 'var(--shadow-lg)'
                     el.style.transform = 'translateY(-4px)'
-                    el.style.borderColor = 'rgba(255,0,0,0.12)'
+                    el.style.borderColor = 'rgba(220,38,38,0.12)'
                   }}
                   onMouseLeave={(e) => {
                     const el = e.currentTarget
@@ -269,7 +269,7 @@ export function ReviewCarousel() {
                 style={{
                   width: activeIdx === i ? '24px' : '8px',
                   height: '8px',
-                  backgroundColor: activeIdx === i ? '#ff0000' : '#6b7280',
+                  backgroundColor: activeIdx === i ? '#dc2626' : '#6b7280',
                 }}
               />
             </button>

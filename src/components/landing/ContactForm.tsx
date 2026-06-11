@@ -83,7 +83,7 @@ export function ContactForm() {
           </div>
           <div className="space-y-2">
             <h3 className="text-3xl font-black uppercase tracking-tight text-gray-900">
-              Inquiry <span className="text-[#ff0000]">Sent!</span>
+              Inquiry <span className="text-[#dc2626]">Sent!</span>
             </h3>
             <p className="text-lg text-gray-600 leading-relaxed max-w-md mx-auto">
               Thank you for contacting us. Your message has been safely saved, and our team will get in touch with you shortly.
@@ -91,7 +91,7 @@ export function ContactForm() {
           </div>
           <Button 
             onClick={() => setSuccess(false)}
-            className="bg-[#ff0000] hover:bg-[#E53935] px-8 py-3 rounded-full font-black uppercase tracking-[0.1em] text-white shadow-xl shadow-red-200 transition-all"
+            className="bg-[#dc2626] hover:bg-[#b91c1c] px-8 py-3 rounded-full font-black uppercase tracking-[0.1em] text-white shadow-xl shadow-red-200 transition-all"
           >
             Send Another Message
           </Button>
@@ -107,7 +107,7 @@ export function ContactForm() {
                 required
                 value={formData.firstName}
                 onChange={handleChange}
-                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-base text-gray-700" 
+                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#dc2626] transition-colors text-base text-gray-700" 
                 placeholder="John" 
               />
             </div>
@@ -118,7 +118,7 @@ export function ContactForm() {
                 name="lastName"
                 value={formData.lastName}
                 onChange={handleChange}
-                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-base text-gray-700" 
+                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#dc2626] transition-colors text-base text-gray-700" 
                 placeholder="Doe" 
               />
             </div>
@@ -131,7 +131,7 @@ export function ContactForm() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-base text-gray-700" 
+              className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#dc2626] transition-colors text-base text-gray-700" 
               placeholder="john@company.com" 
             />
           </div>
@@ -142,7 +142,7 @@ export function ContactForm() {
                 name="fleetSize"
                 value={formData.fleetSize}
                 onChange={handleChange}
-                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#ff0000] transition-colors text-base text-gray-700 appearance-none cursor-pointer"
+                className="w-full h-14 bg-gray-50 border border-gray-200 rounded-2xl px-6 focus:outline-none focus:border-[#dc2626] transition-colors text-base text-gray-700 appearance-none cursor-pointer"
               >
                 <option>1 - 10 vehicles</option>
                 <option>11 - 50 vehicles</option>
@@ -163,7 +163,7 @@ export function ContactForm() {
               required
               value={formData.message}
               onChange={handleChange}
-              className="w-full h-40 bg-gray-50 border border-gray-200 rounded-3xl p-6 focus:outline-none focus:border-[#ff0000] transition-colors resize-none text-base text-gray-700" 
+              className="w-full h-40 bg-gray-50 border border-gray-200 rounded-3xl p-6 focus:outline-none focus:border-[#dc2626] transition-colors resize-none text-base text-gray-700" 
               placeholder="Tell us about your business goals..."
             />
           </div>
@@ -177,7 +177,7 @@ export function ContactForm() {
           <Button 
             type="submit"
             disabled={loading}
-            className="w-full bg-[#ff0000] hover:bg-[#E53935] h-16 rounded-full font-black uppercase tracking-[0.2em] text-white shadow-xl shadow-red-200 group transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+            className="w-full bg-[#dc2626] hover:bg-[#b91c1c] h-16 rounded-full font-black uppercase tracking-[0.2em] text-white shadow-xl shadow-red-200 group transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
           >
             {loading ? (
               <>

@@ -60,18 +60,18 @@ export function Navbar() {
           <Link
             key={link.href}
             href={link.href}
-            className={`relative text-base font-bold uppercase tracking-wider group ${isActive(link.href) ? 'text-[#ff0000]' : 'text-gray-800'}`}
+            className={`relative text-base font-bold uppercase tracking-wider group ${isActive(link.href) ? 'text-[#dc2626]' : 'text-gray-800'}`}
             style={{ transition: 'color 0.2s ease-in-out' }}
           >
             <span
               style={{ transition: 'color 0.2s ease-in-out' }}
-              className="group-hover:text-[#ff0000]"
+              className="group-hover:text-[#dc2626]"
             >
               {link.name}
             </span>
             {/* Underline slide-in */}
             <span
-              className="absolute -bottom-1 left-0 h-[2px] bg-[#ff0000] rounded-full"
+              className="absolute -bottom-1 left-0 h-[2px] bg-[#dc2626] rounded-full"
               style={{
                 width: isActive(link.href) ? '100%' : '0%',
                 transition: 'width 0.22s cubic-bezier(0.4,0,0.2,1)',
@@ -79,7 +79,7 @@ export function Navbar() {
               aria-hidden
             />
             <span
-              className="absolute -bottom-1 left-0 h-[2px] bg-[#ff0000] rounded-full opacity-0 group-hover:opacity-100 group-hover:w-full"
+              className="absolute -bottom-1 left-0 h-[2px] bg-[#dc2626] rounded-full opacity-0 group-hover:opacity-100 group-hover:w-full"
               style={{ width: '0%', transition: 'width 0.22s cubic-bezier(0.4,0,0.2,1), opacity 0.15s' }}
               aria-hidden
             />
@@ -87,18 +87,18 @@ export function Navbar() {
         ))}
         <Link href="/contact">
           <button
-            className="bg-[#ff0000] text-white font-bold uppercase tracking-wider text-base px-6 py-2.5 rounded"
+            className="bg-[#dc2626] text-white font-bold uppercase tracking-wider text-base px-6 py-2.5 rounded"
             style={{
               boxShadow: 'var(--shadow-md)',
               transition: 'all 0.2s ease-in-out',
             }}
             onMouseEnter={e => {
-              (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#E53935'
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#b91c1c'
               ;(e.currentTarget as HTMLButtonElement).style.transform = 'translateY(-2px)'
               ;(e.currentTarget as HTMLButtonElement).style.boxShadow = 'var(--shadow-red)'
             }}
             onMouseLeave={e => {
-              (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#ff0000'
+              (e.currentTarget as HTMLButtonElement).style.backgroundColor = '#dc2626'
               ;(e.currentTarget as HTMLButtonElement).style.transform = 'translateY(0)'
               ;(e.currentTarget as HTMLButtonElement).style.boxShadow = 'var(--shadow-md)'
             }}
@@ -137,7 +137,7 @@ export function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-base font-bold uppercase tracking-widest ${isActive(link.href) ? 'text-[#ff0000]' : 'text-gray-900'}`}
+                className={`text-base font-bold uppercase tracking-widest ${isActive(link.href) ? 'text-[#dc2626]' : 'text-gray-900'}`}
                 style={{ transition: 'color 0.2s' }}
                 onClick={() => setIsOpen(false)}
               >
@@ -145,7 +145,7 @@ export function Navbar() {
               </Link>
             ))}
             <Link href="/contact" onClick={() => setIsOpen(false)}>
-              <button className="w-full bg-[#ff0000] text-white font-bold uppercase tracking-wider text-base px-6 py-4 rounded" style={{ boxShadow: 'var(--shadow-red)' }}>
+              <button className="w-full bg-[#dc2626] text-white font-bold uppercase tracking-wider text-base px-6 py-4 rounded" style={{ boxShadow: 'var(--shadow-red)' }}>
                 GET STARTED
               </button>
             </Link>

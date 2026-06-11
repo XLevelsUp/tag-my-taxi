@@ -69,14 +69,14 @@ export function CountUpStat({
       <div
         className="text-4xl md:text-5xl font-black tabular-nums"
         style={{
-          color: '#ff0000',
+          color: '#dc2626',
           letterSpacing: '-0.02em',
           lineHeight: 1,
           minWidth: '4ch', // prevent layout shift
         }}
       >
         {formatted}
-        <span style={{ color: '#ff0000' }}>{suffix}</span>
+        <span style={{ color: '#dc2626' }}>{suffix}</span>
       </div>
       <div className="text-base text-gray-500 font-medium tracking-wide uppercase mt-2">
         {label}
@@ -109,7 +109,7 @@ export function WhyCard({
         const el = e.currentTarget as HTMLDivElement
         el.style.boxShadow = 'var(--shadow-lg)'
         el.style.transform = 'translateY(-6px)'
-        el.style.borderColor = 'rgba(255,0,0,0.12)'
+        el.style.borderColor = 'rgba(220,38,38,0.12)'
       }}
       onMouseLeave={e => {
         const el = e.currentTarget as HTMLDivElement
@@ -121,7 +121,7 @@ export function WhyCard({
       {/* Icon pill */}
       <div
         className="w-16 h-16 rounded-2xl flex items-center justify-center mb-5"
-        style={{ backgroundColor: 'rgba(255,0,0,0.07)' }}
+        style={{ backgroundColor: 'rgba(220,38,38,0.07)' }}
       >
         {icon}
       </div>
@@ -155,7 +155,7 @@ export function ProcessStep({
         const el = e.currentTarget as HTMLDivElement
         el.style.boxShadow = 'var(--shadow-md)'
         el.style.transform = 'translateY(-4px)'
-        el.style.borderColor = 'rgba(255,0,0,0.15)'
+        el.style.borderColor = 'rgba(220,38,38,0.15)'
       }}
       onMouseLeave={e => {
         const el = e.currentTarget as HTMLDivElement
@@ -167,14 +167,14 @@ export function ProcessStep({
       {/* Step number */}
       <span
         className="text-base font-black mb-3 block"
-        style={{ color: '#ff0000', letterSpacing: '0.08em', opacity: 0.6 }}
+        style={{ color: '#dc2626', letterSpacing: '0.08em', opacity: 0.6 }}
       >
         {step}
       </span>
       {/* Icon */}
       <div
         className="w-14 h-14 rounded-xl flex items-center justify-center mb-4"
-        style={{ backgroundColor: 'rgba(255,0,0,0.07)' }}
+        style={{ backgroundColor: 'rgba(220,38,38,0.07)' }}
       >
         {icon}
       </div>

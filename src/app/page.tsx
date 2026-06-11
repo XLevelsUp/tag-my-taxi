@@ -216,7 +216,7 @@ export default async function Home() {
       </section>
 
       {/* Red Divider Line */}
-      <div className="w-full h-[3px] bg-[#ff0000]" />
+      <div className="w-full h-[3px] bg-[#dc2626]" />
 
       {/* Stop Losing Rides Section */}
       <section className="py-16 md:py-24 bg-white">
@@ -232,32 +232,32 @@ export default async function Home() {
 
           <FadeIn delay={0.3} direction="up" className="grid md:grid-cols-3 gap-8">
             <FeatureCard
-              icon={<Lightbulb className="w-6 h-6 text-[#ff0000]" />}
+              icon={<Lightbulb className="w-6 h-6 text-[#dc2626]" />}
               title="Showcase your brand"
               description="Bring all your brand elements - right from logo, graphics to color scheme - to your white-labeled Uber clone taxi software for a personalized platform."
             />
             <FeatureCard
-              icon={<TrendingUp className="w-6 h-6 text-[#ff0000]" />}
+              icon={<TrendingUp className="w-6 h-6 text-[#dc2626]" />}
               title="Go digital, grow your revenue"
               description="Automate your taxi operations to unlock cost-savings, attract a wider customer base and increase revenue opportunities with an Uber clone software."
             />
             <FeatureCard
-              icon={<Tv className="w-6 h-6 text-[#ff0000]" />}
+              icon={<Tv className="w-6 h-6 text-[#dc2626]" />}
               title="Suite of dispatch system & mobile apps"
               description="Offer your passengers and drivers the convenience of Uber-like mobile apps while you discover the best way of dispatching with our taxi dispatch system."
             />
             <FeatureCard
-              icon={<TrendingUp className="w-6 h-6 text-[#ff0000]" />}
+              icon={<TrendingUp className="w-6 h-6 text-[#dc2626]" />}
               title="Go digital, grow your revenue"
               description="Automate your taxi operations to unlock cost-savings, attract a wider customer base and increase revenue opportunities with an Uber clone software."
             />
             <FeatureCard
-              icon={<Settings className="w-6 h-6 text-[#ff0000]" />}
+              icon={<Settings className="w-6 h-6 text-[#dc2626]" />}
               title="Built for your unique business"
               description="Set up a digital platform that effortlessly adapts your unique business model, fare strategy and customer experience with our Uber clone taxi application."
             />
             <FeatureCard
-              icon={<Rocket className="w-6 h-6 text-[#ff0000]" />}
+              icon={<Rocket className="w-6 h-6 text-[#dc2626]" />}
               title="Launch your platform in no time"
               description="Get ready to take on the digital competition of the taxi world by setting up your cloud-based, Uber-like taxi dispatch software instantly."
             />
@@ -363,9 +363,9 @@ export default async function Home() {
             >
               <div className="text-center mb-10">
                 <div className="inline-flex items-center gap-2 mb-3">
-                  <span className="w-6 h-[2px] bg-[#ff0000] rounded-full" />
-                  <span className="text-[#ff0000] font-bold uppercase tracking-widest text-base">REQUEST A QUOTE</span>
-                  <span className="w-6 h-[2px] bg-[#ff0000] rounded-full" />
+                  <span className="w-6 h-[2px] bg-[#dc2626] rounded-full" />
+                  <span className="text-[#dc2626] font-bold uppercase tracking-widest text-base">REQUEST A QUOTE</span>
+                  <span className="w-6 h-[2px] bg-[#dc2626] rounded-full" />
                 </div>
                 <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2">
                   Start Your Free Trial of the Leading Taxi Dispatch&nbsp;Software&nbsp;Today
@@ -388,7 +388,7 @@ function StatItem({ value, label }: { value: string, label: string }) {
     <div className="space-y-2 px-4">
       <div
         className="text-4xl md:text-5xl font-black"
-        style={{ color: '#ff0000', letterSpacing: '-0.02em' }}
+        style={{ color: '#dc2626', letterSpacing: '-0.02em' }}
       >
         {value}
       </div>

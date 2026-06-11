@@ -27,7 +27,7 @@ export default function SolutionsPage() {
                 <CheckItem text="Analyze crucial data to shorten delivery time & minimize costs." />
               </ul>
               <Link href="/contact">
-                <button className="mt-2 bg-[#ff0000] hover:bg-[#E53935] text-white font-bold text-base px-8 py-3 rounded transition-colors">
+                <button className="mt-2 bg-[#dc2626] hover:bg-[#b91c1c] text-white font-bold text-base px-8 py-3 rounded transition-colors">
                   Get Started
                 </button>
               </Link>
@@ -54,7 +54,7 @@ export default function SolutionsPage() {
             With Tagmytaxi, step up your delivery business game and scale your growth
           </h2>
           <Link href="/contact">
-            <button className="bg-[#ff0000] hover:bg-[#E53935] text-white font-bold text-base px-10 py-3 rounded transition-colors">
+            <button className="bg-[#dc2626] hover:bg-[#b91c1c] text-white font-bold text-base px-10 py-3 rounded transition-colors">
               Ask for a Free Trial
             </button>
           </Link>
@@ -69,7 +69,7 @@ export default function SolutionsPage() {
 function CheckItem({ text }: { text: string }) {
   return (
     <li className="flex items-start gap-3">
-      <Check className="text-[#ff0000] w-5 h-5 mt-0.5 shrink-0" />
+      <Check className="text-[#dc2626] w-5 h-5 mt-0.5 shrink-0" />
       <span className="text-gray-700 text-base leading-relaxed">{text}</span>
     </li>
   )

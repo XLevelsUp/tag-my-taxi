@@ -23,8 +23,8 @@ const inputBase: React.CSSProperties = {
 
 const inputFocusStyle = {
   backgroundColor: '#ffffff',
-  borderColor: '#ff0000',
-  boxShadow: '0 0 0 3px rgba(255,0,0,0.10)',
+  borderColor: '#dc2626',
+  boxShadow: '0 0 0 3px rgba(220,38,38,0.10)',
 }
 
 function PremiumInput(props: React.InputHTMLAttributes<HTMLInputElement>) {
@@ -150,10 +150,10 @@ export function RequestQuoteForm() {
         </p>
         <button
           onClick={() => setSuccess(false)}
-          className="text-base font-black text-[#ff0000] uppercase tracking-wider pt-2 block mx-auto"
+          className="text-base font-black text-[#dc2626] uppercase tracking-wider pt-2 block mx-auto"
           style={{ transition: 'color 0.2s' }}
-          onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.color = '#E53935' }}
-          onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.color = '#ff0000' }}
+          onMouseEnter={e => { (e.currentTarget as HTMLButtonElement).style.color = '#b91c1c' }}
+          onMouseLeave={e => { (e.currentTarget as HTMLButtonElement).style.color = '#dc2626' }}
         >
           Submit Another Request
         </button>
@@ -280,7 +280,7 @@ export function RequestQuoteForm() {
         style={{
           height: '56px',
           marginTop: '8px',
-          backgroundColor: loading ? '#fca5a5' : '#ff0000',
+          backgroundColor: loading ? '#fca5a5' : '#dc2626',
           boxShadow: loading ? 'none' : 'var(--shadow-red)',
           cursor: loading ? 'not-allowed' : 'pointer',
           transition: 'all 0.2s ease-in-out',
@@ -289,7 +289,7 @@ export function RequestQuoteForm() {
         onMouseEnter={e => {
           if (!loading) {
             const b = e.currentTarget as HTMLButtonElement
-            b.style.backgroundColor = '#E53935'
+            b.style.backgroundColor = '#b91c1c'
             b.style.transform = 'translateY(-2px)'
             b.style.boxShadow = 'var(--shadow-red-lg)'
           }
@@ -297,7 +297,7 @@ export function RequestQuoteForm() {
         onMouseLeave={e => {
           if (!loading) {
             const b = e.currentTarget as HTMLButtonElement
-            b.style.backgroundColor = '#ff0000'
+            b.style.backgroundColor = '#dc2626'
             b.style.transform = 'translateY(0)'
             b.style.boxShadow = 'var(--shadow-red)'
           }

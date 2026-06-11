@@ -27,7 +27,7 @@
   --color-input: var(--input);
   --color-border: var(--border);
   --color-destructive: var(--destructive);
-  --color-ae-red: #ff0000;
+  --color-ae-red: #dc2626;
   --color-accent-foreground: var(--accent-foreground);
 
   --color-accent: var(--accent);
@@ -58,8 +58,8 @@
 
 :root {
   /* ── Reference site exact CSS variables (tagmytaxi.ae) ── */
-  --theme: #ff0000;
-  --theme-hover: #E53935;
+  --theme: #dc2626;
+  --theme-hover: #b91c1c;
   --theme-light: #ffffff;
   --body-color: #282828;
   --body-dark-color: #252525;
@@ -141,8 +141,8 @@
   --shadow-md:  0 4px 12px -2px rgb(0 0 0 / 0.08), 0 2px 6px -2px rgb(0 0 0 / 0.05);
   --shadow-lg:  0 10px 24px -4px rgb(0 0 0 / 0.10), 0 4px 10px -4px rgb(0 0 0 / 0.06);
   --shadow-xl:  0 20px 40px -8px rgb(0 0 0 / 0.12), 0 8px 16px -8px rgb(0 0 0 / 0.06);
-  --shadow-red: 0 8px 24px -4px rgb(255 0 0 / 0.28);
-  --shadow-red-lg: 0 16px 32px -8px rgb(255 0 0 / 0.32);
+  --shadow-red: 0 8px 24px -4px rgb(220 38 38 / 0.28);
+  --shadow-red-lg: 0 16px 32px -8px rgb(220 38 38 / 0.32);
 
   /* Transition presets */
   --transition-base: all 0.2s ease-in-out;
@@ -175,7 +175,7 @@
 
   /* Accessible global focus-visible ring */
   :focus-visible {
-    outline: 2px solid #ff0000;
+    outline: 2px solid #dc2626;
     outline-offset: 3px;
     border-radius: 4px;
   }
@@ -186,8 +186,8 @@
   }
   .input-premium:focus {
     outline: none;
-    border-color: #ff0000;
-    box-shadow: 0 0 0 3px rgb(255 0 0 / 0.12);
+    border-color: #dc2626;
+    box-shadow: 0 0 0 3px rgb(220 38 38 / 0.12);
     background-color: #ffffff;
   }
 }

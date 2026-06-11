@@ -15,7 +15,7 @@ function FooterLink({ href, children }: { href: string, children: React.ReactNod
     <li>
       <Link
         href={href}
-        className="text-gray-600 text-base hover:text-[#ff0000] group"
+        className="text-gray-600 text-base hover:text-[#dc2626] group"
         style={{ display: 'inline-flex', alignItems: 'center', gap: '4px', transition: 'all 0.2s ease-in-out' }}
       >
         <span
@@ -33,7 +33,7 @@ export function Footer() {
   return (
     <footer className="bg-white" style={{ borderTop: '1px solid rgba(0,0,0,0.07)' }}>
       {/* Brand red top accent bar */}
-      <div className="w-full h-[3px] bg-[#ff0000]" />
+      <div className="w-full h-[3px] bg-[#dc2626]" />
 
       {/* Main Footer Content */}
       <div className="max-w-6xl mx-auto px-6 py-16">
@@ -130,7 +130,7 @@ export function Footer() {
               <Link
                 key={label}
                 href="#"
-                className="text-base text-gray-600 hover:text-[#ff0000]"
+                className="text-base text-gray-600 hover:text-[#dc2626]"
                 style={{ transition: 'color 0.2s' }}
               >
                 {label}

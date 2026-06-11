@@ -7,7 +7,7 @@ export function HeroCTAButton() {
   return (
     <Link href="/contact">
       <button
-        className="text-white font-bold text-base uppercase tracking-wide mb-5 bg-[#ff0000]"
+        className="text-white font-bold text-base uppercase tracking-wide mb-5 bg-[#dc2626]"
         style={{
           padding: '16px 40px',
           borderRadius: '6px',
@@ -17,13 +17,13 @@ export function HeroCTAButton() {
         }}
         onMouseEnter={e => {
           const b = e.currentTarget as HTMLButtonElement
-          b.style.backgroundColor = '#E53935'
+          b.style.backgroundColor = '#b91c1c'
           b.style.transform = 'translateY(-3px)'
-          b.style.boxShadow = '0 20px 40px -6px rgb(255 0 0 / 0.40)'
+          b.style.boxShadow = '0 20px 40px -6px rgb(220 38 38 / 0.40)'
         }}
         onMouseLeave={e => {
           const b = e.currentTarget as HTMLButtonElement
-          b.style.backgroundColor = '#ff0000'
+          b.style.backgroundColor = '#dc2626'
           b.style.transform = 'translateY(0)'
           b.style.boxShadow = 'var(--shadow-red-lg)'
         }}
@@ -39,7 +39,7 @@ export function PrimaryButton({ children, href }: { children: React.ReactNode; h
   return (
     <Link href={href}>
       <button
-        className="bg-[#ff0000] text-white font-bold text-base rounded-full"
+        className="bg-[#dc2626] text-white font-bold text-base rounded-full"
         style={{
           padding: '12px 32px',
           boxShadow: 'var(--shadow-red)',
@@ -47,13 +47,13 @@ export function PrimaryButton({ children, href }: { children: React.ReactNode; h
         }}
         onMouseEnter={e => {
           const b = e.currentTarget as HTMLButtonElement
-          b.style.backgroundColor = '#E53935'
+          b.style.backgroundColor = '#b91c1c'
           b.style.transform = 'translateY(-2px)'
           b.style.boxShadow = 'var(--shadow-red-lg)'
         }}
         onMouseLeave={e => {
           const b = e.currentTarget as HTMLButtonElement
-          b.style.backgroundColor = '#ff0000'
+          b.style.backgroundColor = '#dc2626'
           b.style.transform = 'translateY(0)'
           b.style.boxShadow = 'var(--shadow-red)'
         }}
@@ -69,16 +69,16 @@ export function OutlineButton({ children, href }: { children: React.ReactNode; h
   return (
     <Link href={href}>
       <button
-        className="text-[#ff0000] font-bold text-base rounded-full"
+        className="text-[#dc2626] font-bold text-base rounded-full"
         style={{
           padding: '11px 30px',
-          border: '2px solid #ff0000',
+          border: '2px solid #dc2626',
           backgroundColor: 'transparent',
           transition: 'all 0.2s ease-in-out',
         }}
         onMouseEnter={e => {
           const b = e.currentTarget as HTMLButtonElement
-          b.style.backgroundColor = '#ff0000'
+          b.style.backgroundColor = '#dc2626'
           b.style.color = '#ffffff'
           b.style.transform = 'translateY(-2px)'
           b.style.boxShadow = 'var(--shadow-red)'
@@ -86,7 +86,7 @@ export function OutlineButton({ children, href }: { children: React.ReactNode; h
         onMouseLeave={e => {
           const b = e.currentTarget as HTMLButtonElement
           b.style.backgroundColor = 'transparent'
-          b.style.color = '#ff0000'
+          b.style.color = '#dc2626'
           b.style.transform = 'translateY(0)'
           b.style.boxShadow = 'none'
         }}
@@ -111,7 +111,7 @@ export function FeatureCard({ icon, title, description }: { icon: React.ReactNod
         const el = e.currentTarget as HTMLDivElement
         el.style.boxShadow = 'var(--shadow-lg)'
         el.style.transform = 'translateY(-6px)'
-        el.style.borderColor = 'rgba(255,0,0,0.12)'
+        el.style.borderColor = 'rgba(220,38,38,0.12)'
       }}
       onMouseLeave={e => {
         const el = e.currentTarget as HTMLDivElement
@@ -122,7 +122,7 @@ export function FeatureCard({ icon, title, description }: { icon: React.ReactNod
     >
       <div
         className="w-14 h-14 rounded-xl flex items-center justify-center mb-5"
-        style={{ backgroundColor: 'rgba(255,0,0,0.07)' }}
+        style={{ backgroundColor: 'rgba(220,38,38,0.07)' }}
       >
         {icon}
       </div>

@@ -87,12 +87,12 @@ const adminFeatures = [
 ]
 
 const moreFeatures = [
-  { icon: <Wallet className="w-8 h-8 text-[#ff0000]" />, title: 'Wallet payment', desc: 'Host wallet option for both drivers and passengers for easier checkout and secure payment.' },
-  { icon: <PhoneCall className="w-8 h-8 text-[#ff0000]" />, title: 'Call masking', desc: 'Protect private information on calls and texts by masking the permanent number of the users.' },
-  { icon: <Mic className="w-8 h-8 text-[#ff0000]" />, title: 'Voice commands', desc: 'Integrate VoIP in the dispatcher panel to stay in touch with your resources at no additional costs.' },
-  { icon: <Heart className="w-8 h-8 text-[#ff0000]" />, title: 'Loyalty program', desc: 'Avail discounts and rewards to persuade customers to engage more frequently with your services.' },
-  { icon: <Share2 className="w-8 h-8 text-[#ff0000]" />, title: 'Social sharing', desc: 'Link relevant social media sites to bring on supporting reviews and feedback on your services.' },
-  { icon: <Languages className="w-8 h-8 text-[#ff0000]" />, title: 'Multi-lingual support', desc: 'Incorporate multiple languages in the application to reach more customers at the global level.' },
+  { icon: <Wallet className="w-8 h-8 text-[#dc2626]" />, title: 'Wallet payment', desc: 'Host wallet option for both drivers and passengers for easier checkout and secure payment.' },
+  { icon: <PhoneCall className="w-8 h-8 text-[#dc2626]" />, title: 'Call masking', desc: 'Protect private information on calls and texts by masking the permanent number of the users.' },
+  { icon: <Mic className="w-8 h-8 text-[#dc2626]" />, title: 'Voice commands', desc: 'Integrate VoIP in the dispatcher panel to stay in touch with your resources at no additional costs.' },
+  { icon: <Heart className="w-8 h-8 text-[#dc2626]" />, title: 'Loyalty program', desc: 'Avail discounts and rewards to persuade customers to engage more frequently with your services.' },
+  { icon: <Share2 className="w-8 h-8 text-[#dc2626]" />, title: 'Social sharing', desc: 'Link relevant social media sites to bring on supporting reviews and feedback on your services.' },
+  { icon: <Languages className="w-8 h-8 text-[#dc2626]" />, title: 'Multi-lingual support', desc: 'Incorporate multiple languages in the application to reach more customers at the global level.' },
 ]
 
 /* ─────────────────────────────────────────────
@@ -104,7 +104,7 @@ function NumberedFeatureList({ features }: { features: { title: string; desc: st
     <ul className="space-y-8">
       {features.map((f, i) => (
         <li key={i} className="flex gap-5 items-start">
-          <span className="flex-shrink-0 w-9 h-9 rounded-full border-2 border-[#ff0000] text-[#ff0000] font-bold text-base flex items-center justify-center">
+          <span className="flex-shrink-0 w-9 h-9 rounded-full border-2 border-[#dc2626] text-[#dc2626] font-bold text-base flex items-center justify-center">
             {i + 1}
           </span>
           <div>
@@ -151,14 +151,14 @@ export default function FeaturesPage() {
       {/* Page Header */}
       <header className="pt-40 pb-16 bg-gray-50 border-b border-gray-100">
         <div className="max-w-6xl mx-auto px-6 text-center space-y-3">
-          <span className="text-[#ff0000] font-bold uppercase tracking-widest text-base">Platform Overview</span>
+          <span className="text-[#dc2626] font-bold uppercase tracking-widest text-base">Platform Overview</span>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900">
             Features
           </h1>
           <p className="text-gray-500 text-lg max-w-2xl mx-auto">
             Everything you need to run a world-class taxi dispatch operation
           </p>
-          <div className="w-16 h-1 bg-[#ff0000] mx-auto mt-4" />
+          <div className="w-16 h-1 bg-[#dc2626] mx-auto mt-4" />
         </div>
       </header>
 
@@ -239,14 +239,14 @@ export default function FeaturesPage() {
         </section>
 
         {/* ── CTA ── */}
-        <section className="py-12 md:py-16 bg-[#ff0000] text-white text-center">
+        <section className="py-12 md:py-16 bg-[#dc2626] text-white text-center">
           <div className="max-w-2xl mx-auto px-6 space-y-6">
             <h2 className="text-3xl font-bold">Ready to upgrade your fleet?</h2>
             <p className="text-red-100">
               Join the global network of transportation leaders using TagMyTaxi to scale their operations.
             </p>
             <Link href="/contact">
-              <button className="bg-white text-[#ff0000] hover:bg-red-100 font-bold px-10 py-4 rounded-full transition-colors text-base uppercase tracking-widest">
+              <button className="bg-white text-[#dc2626] hover:bg-red-100 font-bold px-10 py-4 rounded-full transition-colors text-base uppercase tracking-widest">
                 Get a Free Demo
               </button>
             </Link>

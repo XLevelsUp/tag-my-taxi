@@ -76,22 +76,22 @@ export default function AboutPage() {
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            background: 'radial-gradient(ellipse 60% 50% at 50% 80%, rgba(255,0,0,0.12) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse 60% 50% at 50% 80%, rgba(220,38,38,0.12) 0%, transparent 70%)',
           }}
         />
         {/* Red bottom accent line */}
-        <div className="absolute bottom-0 left-0 w-full h-[3px] bg-[#ff0000]" />
+        <div className="absolute bottom-0 left-0 w-full h-[3px] bg-[#dc2626]" />
 
         <FadeIn delay={0.15} direction="up" className="relative z-10 text-center px-6">
           <div className="inline-flex items-center gap-2 mb-4">
-            <span className="w-8 h-[2px] bg-[#ff0000] rounded-full" />
+            <span className="w-8 h-[2px] bg-[#dc2626] rounded-full" />
             <span
-              className="text-[#ff0000] font-bold uppercase tracking-widest"
+              className="text-[#dc2626] font-bold uppercase tracking-widest"
               style={{ fontSize: '16px' }}
             >
               Our Story
             </span>
-            <span className="w-8 h-[2px] bg-[#ff0000] rounded-full" />
+            <span className="w-8 h-[2px] bg-[#dc2626] rounded-full" />
           </div>
           <h1
             className="text-4xl md:text-5xl font-bold text-white mb-4"
@@ -127,7 +127,7 @@ export default function AboutPage() {
               <FadeIn delay={0.4} direction="left" className="space-y-5">
                 <div>
                   <span
-                    className="text-[#ff0000] font-bold uppercase tracking-widest block mb-3"
+                    className="text-[#dc2626] font-bold uppercase tracking-widest block mb-3"
                     style={{ fontSize: '16px' }}
                   >
                     Who We Are
@@ -193,7 +193,7 @@ export default function AboutPage() {
           <div className="max-w-5xl mx-auto px-6">
             <FadeIn delay={0.1} direction="up" className="text-center mb-14">
               <span
-                className="text-[#ff0000] font-bold uppercase tracking-widest block mb-3"
+                className="text-[#dc2626] font-bold uppercase tracking-widest block mb-3"
                 style={{ fontSize: '16px' }}
               >
                 Our Advantage
@@ -210,17 +210,17 @@ export default function AboutPage() {
             </FadeIn>
             <FadeIn delay={0.3} direction="up" className="grid md:grid-cols-3 gap-8">
               <WhyCard
-                icon={<LayoutGrid className="w-8 h-8 text-[#ff0000]" />}
+                icon={<LayoutGrid className="w-8 h-8 text-[#dc2626]" />}
                 title="Personalized attention"
                 desc="All of our work is focused on the clients and in obtaining the results that they deserve."
               />
               <WhyCard
-                icon={<BadgeCheck className="w-8 h-8 text-[#ff0000]" />}
+                icon={<BadgeCheck className="w-8 h-8 text-[#dc2626]" />}
                 title="Perfected process"
                 desc="One of our greatest triumphs is our seamless system that delivers high-quality products."
               />
               <WhyCard
-                icon={<ThumbsUp className="w-8 h-8 text-[#ff0000]" />}
+                icon={<ThumbsUp className="w-8 h-8 text-[#dc2626]" />}
                 title="Proven expertise"
                 desc="The signature virtue of our business is the strong loyalty we uphold to our clients."
               />
@@ -229,7 +229,7 @@ export default function AboutPage() {
         </section>
 
         {/* Red divider */}
-        <div className="w-full h-[3px] bg-[#ff0000]" />
+        <div className="w-full h-[3px] bg-[#dc2626]" />
 
         {/* ── Timeline ── */}
         <section className="py-16 md:py-24 bg-white">
@@ -343,7 +343,7 @@ export default function AboutPage() {
               <FadeIn delay={0.2} direction="right" className="space-y-6">
                 <div>
                   <span
-                    className="text-[#ff0000] font-bold uppercase tracking-widest block mb-3"
+                    className="text-[#dc2626] font-bold uppercase tracking-widest block mb-3"
                     style={{ fontSize: '16px' }}
                   >
                     Our Approach
@@ -386,7 +386,7 @@ export default function AboutPage() {
           <div className="max-w-5xl mx-auto px-6">
             <FadeIn delay={0.1} direction="up" className="text-center mb-14">
               <span
-                className="text-[#ff0000] font-bold uppercase tracking-widest block mb-3"
+                className="text-[#dc2626] font-bold uppercase tracking-widest block mb-3"
                 style={{ fontSize: '16px' }}
               >
                 How We Deliver
@@ -402,27 +402,27 @@ export default function AboutPage() {
             <FadeIn delay={0.3} direction="up" className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-6">
               <ProcessStep
                 step="01"
-                icon={<BarChart2 className="w-7 h-7 text-[#ff0000]" />}
+                icon={<BarChart2 className="w-7 h-7 text-[#dc2626]" />}
                 label="Analyze"
               />
               <ProcessStep
                 step="02"
-                icon={<Pencil className="w-7 h-7 text-[#ff0000]" />}
+                icon={<Pencil className="w-7 h-7 text-[#dc2626]" />}
                 label="Design"
               />
               <ProcessStep
                 step="03"
-                icon={<Wrench className="w-7 h-7 text-[#ff0000]" />}
+                icon={<Wrench className="w-7 h-7 text-[#dc2626]" />}
                 label="Build"
               />
               <ProcessStep
                 step="04"
-                icon={<FlaskConical className="w-7 h-7 text-[#ff0000]" />}
+                icon={<FlaskConical className="w-7 h-7 text-[#dc2626]" />}
                 label="Test"
               />
               <ProcessStep
                 step="05"
-                icon={<PackageCheck className="w-7 h-7 text-[#ff0000]" />}
+                icon={<PackageCheck className="w-7 h-7 text-[#dc2626]" />}
                 label="Deliver"
               />
             </FadeIn>
@@ -440,7 +440,7 @@ export default function AboutPage() {
           <div
             className="absolute inset-0 pointer-events-none"
             style={{
-              background: 'radial-gradient(ellipse 50% 80% at 50% 100%, rgba(255,0,0,0.15) 0%, transparent 70%)',
+              background: 'radial-gradient(ellipse 50% 80% at 50% 100%, rgba(220,38,38,0.15) 0%, transparent 70%)',
             }}
           />
           <FadeIn delay={0.2} direction="up" className="relative z-10 text-center px-6 max-w-2xl mx-auto space-y-6">
