@@ -167,7 +167,7 @@ export default async function Home() {
           src="/banner.jpg"
           alt=""
           fill
-          priority
+          preload={true}
           sizes="100vw"
           className="object-cover object-center"
           quality={75}
