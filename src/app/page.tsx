@@ -12,6 +12,7 @@ import {
   OutlineButton,
   FeatureCard,
 } from '@/components/landing/LandingInteractive'
+import { PlayStoreModalButton } from '@/components/landing/PlayStoreModalButton'
 
 /* ── Lazy-loaded below-fold client components (reduces initial JS bundle) ── */
 const ReviewCarousel = dynamic(
@@ -20,8 +21,8 @@ const ReviewCarousel = dynamic(
 const FAQAccordion = dynamic(
   () => import('@/components/landing/FAQAccordion').then(m => m.FAQAccordion)
 )
-const RequestQuoteForm = dynamic(
-  () => import('@/components/landing/RequestQuoteForm').then(m => m.RequestQuoteForm)
+const UnifiedContactForm = dynamic(
+  () => import('@/components/landing/UnifiedContactForm').then(m => m.UnifiedContactForm)
 )
 
 
@@ -197,8 +198,11 @@ export default async function Home() {
           <p className="text-lg md:text-xl text-gray-200 mb-10 font-normal italic" style={{ letterSpacing: '0.01em' }}>
             The last upgrade your fleet will ever need — AI-powered dispatch, real-time GPS tracking, and a white-label taxi app ready in 24&nbsp;hours.
           </p>
-          <HeroCTAButton />
-          <p className="text-gray-300 text-base italic mt-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
+            <HeroCTAButton />
+            <PlayStoreModalButton />
+          </div>
+          <p className="text-gray-300 text-base italic">
             Try free for 15 days. No risk, and no credit card required.
           </p>
         </FadeIn>
@@ -312,43 +316,14 @@ export default async function Home() {
               <p className="text-gray-600 leading-relaxed" style={{ lineHeight: '1.75' }}>
                 The traditional taxi business is plagued with complex manual processes. TagMyTaxi breaks these inefficiencies with its Uber-like taxi booking app that saves both time and money. Witness how a white-label taxi dispatch software can help your business to increase your bookings, improve productivity and gain more returns.
               </p>
-              <PrimaryButton href="/contact">Request Demo</PrimaryButton>
+              <div className="flex flex-wrap items-center gap-4">
+                <PrimaryButton href="/contact">Request Demo</PrimaryButton>
+                <PlayStoreModalButton />
+              </div>
             </FadeIn>
           </div>
         </div>
       </section>
-
-      {/* Trusted by Fleet Management Companies Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-            <FadeIn delay={0.2} direction="right" className="space-y-7">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
-                Trusted by Fleet Management Companies on 6&nbsp;Continents
-              </h2>
-              <p className="text-gray-600 leading-relaxed" style={{ lineHeight: '1.75' }}>
-                Our white-label, on-demand taxi dispatch application is crafted in such a way that it can accommodate your specific business requirements. From a rental company, shuttle service to paratransit business, our unique booking software incorporates advanced features that address industry needs. Scale your business to newer heights with TagMyTaxi.
-              </p>
-              <OutlineButton href="/contact">Get Started Free</OutlineButton>
-            </FadeIn>
-            <FadeIn delay={0.4} direction="left" className="flex justify-center">
-              <Image
-                src="/solutions_designed.png"
-                alt="Fleet Management Software for Business Growth"
-                width={450}
-                height={400}
-                className="object-contain"
-              />
-            </FadeIn>
-          </div>
-        </div>
-      </section>
-
-      {/* Reviews Section */}
-      <ReviewCarousel />
-
-      {/* FAQ Section */}
-      <FAQAccordion />
 
       {/* Request A Quote Section */}
       <section className="py-16 md:py-24" style={{ background: 'linear-gradient(to bottom, #f9fafb, #ffffff)' }}>
@@ -371,11 +346,46 @@ export default async function Home() {
                   Start Your Free Trial of the Leading Taxi Dispatch&nbsp;Software&nbsp;Today
                 </h2>
               </div>
-              <RequestQuoteForm />
+              <UnifiedContactForm formType="quote" variant="landing" />
             </div>
           </FadeIn>
         </div>
       </section>
+
+      {/* Trusted by Fleet Management Companies Section */}
+      <section className="py-16 md:py-24 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
+            <FadeIn delay={0.2} direction="right" className="space-y-7">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+                Trusted by Fleet Management Companies on 6&nbsp;Continents
+              </h2>
+              <p className="text-gray-600 leading-relaxed" style={{ lineHeight: '1.75' }}>
+                Our white-label, on-demand taxi dispatch application is crafted in such a way that it can accommodate your specific business requirements. From a rental company, shuttle service to paratransit business, our unique booking software incorporates advanced features that address industry needs. Scale your business to newer heights with TagMyTaxi.
+              </p>
+              <div className="flex flex-wrap items-center gap-4">
+                <OutlineButton href="/contact">Get Started Free</OutlineButton>
+                <PlayStoreModalButton />
+              </div>
+            </FadeIn>
+            <FadeIn delay={0.4} direction="left" className="flex justify-center">
+              <Image
+                src="/solutions_designed.png"
+                alt="Fleet Management Software for Business Growth"
+                width={450}
+                height={400}
+                className="object-contain"
+              />
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <ReviewCarousel />
+
+      {/* FAQ Section */}
+      <FAQAccordion />
 
       <Footer />
 

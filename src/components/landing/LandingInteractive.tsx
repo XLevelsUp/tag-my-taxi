@@ -7,7 +7,7 @@ export function HeroCTAButton() {
   return (
     <Link href="/contact">
       <button
-        className="text-white font-bold text-base uppercase tracking-wide mb-5 bg-[#dc2626]"
+        className="text-white font-bold text-base uppercase tracking-wide bg-[#dc2626]"
         style={{
           padding: '16px 40px',
           borderRadius: '6px',

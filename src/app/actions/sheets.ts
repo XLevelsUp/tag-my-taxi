@@ -31,7 +31,7 @@ async function sendEmailNotification(data: FormSubmissionData) {
   
   const isQuote = data.formType === 'quote'
   const subject = isQuote ? 'Inquiry Mail From Request A Quote' : 'Inquiry Mail From Contact Us'
-  const name = isQuote ? data.name : `${data.firstName || ''} ${data.lastName || ''}`.trim()
+  const name = data.name || `${data.firstName || ''} ${data.lastName || ''}`.trim()
   
   const htmlBody = `
     <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="background: #f5f5f5; font-family: Roboto, sans-serif; line-height: 1.4; font-size: 16px; color: #000;">

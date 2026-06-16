@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
 import { Navbar } from '@/components/landing/Navbar'
 import { Footer } from '@/components/landing/Footer'
-import { ContactForm } from '@/components/landing/ContactForm'
+import { UnifiedContactForm } from '@/components/landing/UnifiedContactForm'
 
 export default function ContactPage() {
   return (
@@ -59,7 +59,7 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Form */}
-            <ContactForm />
+            <UnifiedContactForm formType="contact" variant="contact" />
           </div>
         </div>
       </main>
