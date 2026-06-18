@@ -137,7 +137,10 @@ export function Footer() {
               </Link>
             ))}
           </div>
-          <p className="text-base text-gray-600">© {new Date().getFullYear()}, Tagmytaxi.com All Rights Reserved.</p>
+          <div className="text-base text-gray-600 text-center md:text-right">
+            <p>© {new Date().getFullYear()}, Tagmytaxi.com All Rights Reserved.</p>
+            <p className="mt-1 text-[13px] text-gray-500">Built with ❤️ by XLevelsUp</p>
+          </div>
         </div>
       </div>
     </footer>

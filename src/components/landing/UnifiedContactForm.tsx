@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { Button } from '@/components/ui/button'
 import { Send, CheckCircle2 } from 'lucide-react'
 import { submitToGoogleSheets } from '@/app/actions/sheets'
@@ -26,6 +26,22 @@ export function UnifiedContactForm({ formType, variant = 'landing' }: UnifiedCon
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
   const [success, setSuccess] = useState(false)
+
+  const formRef = useRef<HTMLDivElement>(null)
+
+  useEffect(() => {
+    if (variant === 'contact') {
+      const handleScroll = () => {
+        const isMobile = window.innerWidth < 1024
+        if (isMobile && formRef.current) {
+          formRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        }
+      }
+
+      const timer = setTimeout(handleScroll, 500)
+      return () => clearTimeout(timer)
+    }
+  }, [variant])
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -310,7 +326,12 @@ export function UnifiedContactForm({ formType, variant = 'landing' }: UnifiedCon
 
   if (variant === 'contact') {
     return (
-      <div className="bg-white p-10 lg:p-16 rounded-[3rem] shadow-2xl border border-gray-100 relative overflow-hidden group min-h-[550px] flex flex-col justify-center">
+      <div
+        id="contact-form"
+        ref={formRef}
+        className="bg-white p-10 lg:p-16 rounded-[3rem] shadow-2xl border border-gray-100 relative overflow-hidden group min-h-[550px] flex flex-col justify-center"
+        style={{ scrollMarginTop: '140px' }}
+      >
         <div className="absolute top-0 right-0 w-32 h-32 bg-red-50 rounded-full -mr-16 -mt-16 blur-3xl opacity-50 group-hover:opacity-100 transition-opacity"></div>
         <div className="relative z-10">
           {success ? successView : formFields}

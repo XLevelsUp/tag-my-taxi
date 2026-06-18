@@ -13,6 +13,7 @@ import {
   FeatureCard,
 } from '@/components/landing/LandingInteractive'
 import { PlayStoreModalButton } from '@/components/landing/PlayStoreModalButton'
+import { UnifiedContactForm } from '@/components/landing/UnifiedContactForm'
 
 /* ── Lazy-loaded below-fold client components (reduces initial JS bundle) ── */
 const ReviewCarousel = dynamic(
@@ -20,9 +21,6 @@ const ReviewCarousel = dynamic(
 )
 const FAQAccordion = dynamic(
   () => import('@/components/landing/FAQAccordion').then(m => m.FAQAccordion)
-)
-const UnifiedContactForm = dynamic(
-  () => import('@/components/landing/UnifiedContactForm').then(m => m.UnifiedContactForm)
 )
 
 
@@ -160,8 +158,8 @@ export default async function Home() {
 
       {/* Hero Section — optimized: next/image with priority for LCP preload */}
       <section
-        className="relative flex items-center justify-center overflow-hidden"
-        style={{ minHeight: '740px' }}
+        className="relative flex items-center justify-center overflow-hidden py-16 lg:py-28"
+        style={{ minHeight: '800px' }}
       >
         {/* Hero background — next/image enables AVIF/WebP + automatic preload */}
         <Image
@@ -183,29 +181,52 @@ export default async function Home() {
           style={{ background: 'linear-gradient(to bottom, transparent, rgba(0,0,0,0.30))' }}
         />
 
-        <FadeIn delay={0.2} direction="up" className="relative z-10 text-center text-white px-6 max-w-4xl mx-auto py-20 md:py-28">
-          <h1
-            className="text-4xl md:text-5xl lg:text-[56px] font-extrabold leading-tight mb-6 text-white"
-            style={{
-              lineHeight: '1.15',
-              textShadow: '0 2px 16px rgba(0,0,0,0.35)',
-              letterSpacing: '-0.02em',
-            }}
-          >
-            #1 Taxi Dispatch Software<br />
-            500+ Companies, Zero&nbsp;Compromises
-          </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-10 font-normal italic" style={{ letterSpacing: '0.01em' }}>
-            The last upgrade your fleet will ever need — AI-powered dispatch, real-time GPS tracking, and a white-label taxi app ready in 24&nbsp;hours.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-            <HeroCTAButton />
-            <PlayStoreModalButton />
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            {/* Left Column: Heading and Subtitle */}
+            <FadeIn delay={0.2} direction="up" className="lg:col-span-7 text-center lg:text-left text-white space-y-6">
+              <h1
+                className="text-4xl md:text-5xl lg:text-[52px] font-extrabold leading-tight text-white"
+                style={{
+                  lineHeight: '1.15',
+                  textShadow: '0 2px 16px rgba(0,0,0,0.35)',
+                  letterSpacing: '-0.02em',
+                }}
+              >
+                #1 Taxi Dispatch Software<br />
+                500+ Companies, Zero&nbsp;Compromises
+              </h1>
+              <p className="text-lg md:text-xl text-gray-200 font-normal italic" style={{ letterSpacing: '0.01em', lineHeight: '1.6' }}>
+                The last upgrade your fleet will ever need — AI-powered dispatch, real-time GPS tracking, and a white-label taxi app ready in 24&nbsp;hours.
+              </p>
+              
+              <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                <PlayStoreModalButton />
+                <span className="text-gray-300 text-sm italic">
+                  Try free for 15 days. No credit card required.
+                </span>
+              </div>
+            </FadeIn>
+
+            {/* Right Column: Form Container */}
+            <FadeIn delay={0.4} direction="up" className="lg:col-span-5 w-full max-w-md mx-auto">
+              <div
+                className="bg-white rounded-3xl p-8 shadow-2xl border border-gray-100/50 text-gray-900 text-left"
+                style={{ boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.35)' }}
+              >
+                <div className="mb-6">
+                  <h3 className="text-2xl font-black uppercase tracking-tight text-gray-900 mb-1">
+                    Request <span className="text-[#dc2626]">A Quote</span>
+                  </h3>
+                  <p className="text-gray-500 text-[14px]">
+                    Enter details below to start your free trial.
+                  </p>
+                </div>
+                <UnifiedContactForm formType="quote" variant="landing" />
+              </div>
+            </FadeIn>
           </div>
-          <p className="text-gray-300 text-base italic">
-            Try free for 15 days. No risk, and no credit card required.
-          </p>
-        </FadeIn>
+        </div>
       </section>
 
       {/* Stats Section */}
@@ -283,14 +304,16 @@ export default async function Home() {
               <PrimaryButton href="/features">View Features</PrimaryButton>
             </FadeIn>
             <FadeIn delay={0.4} direction="left" className="flex justify-center">
-              <Image
-                src="/homeBanner.png"
-                alt="Cloud-Based Taxi Dispatch Software Dashboard"
-                width={480}
-                height={430}
-                className="object-contain"
-                loading="lazy"
-              />
+              <div className="relative w-full max-w-[520px]">
+                <Image
+                  src="/tab2.png"
+                  alt="TagMyTaxi Fleet Management Dashboard — real-time vehicle tracking and metrics"
+                  width={520}
+                  height={390}
+                  className="object-contain w-full drop-shadow-2xl rounded-2xl"
+                  loading="lazy"
+                />
+              </div>
             </FadeIn>
           </div>
         </div>
@@ -301,13 +324,41 @@ export default async function Home() {
         <div className="max-w-6xl mx-auto px-6">
           <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
             <FadeIn delay={0.2} direction="right" className="flex justify-center">
-              <Image
-                src="/taxi-app.png"
-                alt="Taxi Booking App for Android and iOS"
-                width={450}
-                height={400}
-                className="object-contain"
-              />
+              <div className="relative flex items-end justify-center gap-[-20px] w-full max-w-[420px] mx-auto">
+                {/* Back phone — slightly raised and offset */}
+                <div className="relative z-10 -mr-8 mb-8" style={{ transform: 'rotate(-6deg)' }}>
+                  <Image
+                    src="/mobile3.png"
+                    alt="TagMyTaxi Passenger App — choose your ride type"
+                    width={190}
+                    height={380}
+                    className="object-contain drop-shadow-xl"
+                    loading="lazy"
+                  />
+                </div>
+                {/* Front phone — centered and prominent */}
+                <div className="relative z-20" style={{ transform: 'rotate(0deg)' }}>
+                  <Image
+                    src="/mobile2.png"
+                    alt="TagMyTaxi Passenger App — book a ride with live map"
+                    width={210}
+                    height={420}
+                    className="object-contain drop-shadow-2xl"
+                    loading="lazy"
+                  />
+                </div>
+                {/* Right phone — slightly offset */}
+                <div className="relative z-10 -ml-8 mb-6" style={{ transform: 'rotate(5deg)' }}>
+                  <Image
+                    src="/mobile6.png"
+                    alt="TagMyTaxi Passenger App — home screen"
+                    width={185}
+                    height={370}
+                    className="object-contain drop-shadow-xl"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </FadeIn>
             <FadeIn delay={0.4} direction="left" className="space-y-7">
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
@@ -325,32 +376,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* Request A Quote Section */}
-      <section className="py-16 md:py-24" style={{ background: 'linear-gradient(to bottom, #f9fafb, #ffffff)' }}>
-        <div className="max-w-3xl mx-auto px-6">
-          <FadeIn delay={0.2} direction="up">
-            <div
-              className="bg-white rounded-2xl p-10 md:p-14"
-              style={{
-                boxShadow: 'var(--shadow-xl)',
-                border: '1px solid rgba(0,0,0,0.06)',
-              }}
-            >
-              <div className="text-center mb-10">
-                <div className="inline-flex items-center gap-2 mb-3">
-                  <span className="w-6 h-[2px] bg-[#dc2626] rounded-full" />
-                  <span className="text-[#dc2626] font-bold uppercase tracking-widest text-base">REQUEST A QUOTE</span>
-                  <span className="w-6 h-[2px] bg-[#dc2626] rounded-full" />
-                </div>
-                <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mt-2">
-                  Start Your Free Trial of the Leading Taxi Dispatch&nbsp;Software&nbsp;Today
-                </h2>
-              </div>
-              <UnifiedContactForm formType="quote" variant="landing" />
-            </div>
-          </FadeIn>
-        </div>
-      </section>
+
 
       {/* Trusted by Fleet Management Companies Section */}
       <section className="py-16 md:py-24 bg-gray-50">
@@ -369,13 +395,31 @@ export default async function Home() {
               </div>
             </FadeIn>
             <FadeIn delay={0.4} direction="left" className="flex justify-center">
-              <Image
-                src="/solutions_designed.png"
-                alt="Fleet Management Software for Business Growth"
-                width={450}
-                height={400}
-                className="object-contain"
-              />
+              <div className="relative w-full max-w-[520px]">
+                {/* Main tablet dashboard */}
+                <Image
+                  src="/tab1.png"
+                  alt="TagMyTaxi Fleet Management Dashboard — dark mode with live vehicle tracking"
+                  width={480}
+                  height={360}
+                  className="object-contain w-full drop-shadow-2xl rounded-2xl"
+                  loading="lazy"
+                />
+                {/* Floating driver mobile overlaid bottom-right */}
+                <div
+                  className="absolute -bottom-4 -right-4 z-10 rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
+                  style={{ width: '120px' }}
+                >
+                  <Image
+                    src="/mobile4.png"
+                    alt="TagMyTaxi Driver App — live tracking"
+                    width={120}
+                    height={240}
+                    className="object-contain w-full"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
             </FadeIn>
           </div>
         </div>
