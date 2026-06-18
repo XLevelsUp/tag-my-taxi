@@ -139,7 +139,7 @@ export function Footer() {
           </div>
           <div className="text-base text-gray-600 text-center md:text-right">
             <p>© {new Date().getFullYear()}, Tagmytaxi.com All Rights Reserved.</p>
-            <p className="mt-1 text-[13px] text-gray-500">Built with ❤️ by XLevelsUp</p>
+            <p className="mt-1 text-[13px] text-gray-500">Built with ❤️ by <a href="https://www.xlevelsup.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#dc2626] transition-colors">XLevelsUp</a></p>
           </div>
         </div>
       </div>

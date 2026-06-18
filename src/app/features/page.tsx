@@ -172,7 +172,7 @@ export default function FeaturesPage() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-10">Passenger application</h2>
                 <NumberedFeatureList features={passengerFeatures} />
               </div>
-              <PhoneMockup src="/phone_app_illustration.png" alt="Passenger App" />
+              <PhoneMockup src="/mobile2.png" alt="TagMyTaxi Passenger App — book a ride with live map" />
             </div>
           </div>
         </section>
@@ -183,7 +183,7 @@ export default function FeaturesPage() {
         <section className="py-12 md:py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-              <PhoneMockup src="/taxi_ride_illustration.png" alt="Driver App" />
+              <PhoneMockup src="/mobile4.png" alt="TagMyTaxi Driver App — live tracking and ride alerts" />
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-10">Driver application</h2>
                 <NumberedFeatureList features={driverFeatures} />
@@ -202,7 +202,7 @@ export default function FeaturesPage() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-10">Dispatcher panel</h2>
                 <NumberedFeatureList features={dispatcherFeatures} />
               </div>
-              <DashboardMockup src="/business_growth_illustration.png" alt="Dispatcher Panel" />
+              <DashboardMockup src="/tab2.png" alt="TagMyTaxi Dispatcher Panel — fleet management dashboard" />
             </div>
           </div>
         </section>
@@ -213,7 +213,7 @@ export default function FeaturesPage() {
         <section className="py-12 md:py-20 bg-gray-50">
           <div className="max-w-6xl mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
-              <DashboardMockup src="/business_growth_illustration.png" alt="Admin Panel" />
+              <DashboardMockup src="/tab1.png" alt="TagMyTaxi Admin Panel — dark mode with live vehicle tracking" />
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-10">Admin panel</h2>
                 <NumberedFeatureList features={adminFeatures} />
