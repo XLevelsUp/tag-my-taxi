@@ -116,7 +116,7 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <FadeIn delay={0.2} direction="right" className="flex justify-center">
                 <Image
-                  src="/phone_app_illustration.png"
+                  src="/taxi_ride_illustration.png"
                   alt="What We Do"
                   width={380}
                   height={340}
@@ -369,7 +369,7 @@ export default function AboutPage() {
               </FadeIn>
               <FadeIn delay={0.4} direction="left" className="flex justify-center">
                 <Image
-                  src="/business_growth_illustration.png"
+                  src="/phone_app_illustration.png"
                   alt="How We Work"
                   width={380}
                   height={340}

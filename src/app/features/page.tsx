@@ -120,10 +120,15 @@ function NumberedFeatureList({ features }: { features: { title: string; desc: st
 function PhoneMockup({ src, alt }: { src: string; alt: string }) {
   return (
     <div className="flex justify-center">
-      <div className="relative w-[240px] rounded-[2.5rem] border-[8px] border-gray-200 shadow-xl overflow-hidden bg-white">
-        {/* notch */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-20 h-5 bg-gray-200 rounded-b-2xl z-10" />
-        <Image src={src} alt={alt} width={240} height={480} className="w-full object-cover" />
+      <div className="relative w-full max-w-[280px]">
+        <Image
+          src={src}
+          alt={alt}
+          width={280}
+          height={560}
+          className="object-contain w-full"
+          loading="lazy"
+        />
       </div>
     </div>
   )

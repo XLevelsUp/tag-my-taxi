@@ -138,7 +138,7 @@ export default function SolutionsPage() {
                   alt="TagMyTaxi Passenger App — book a ride with live map"
                   width={280}
                   height={560}
-                  className="object-contain w-full drop-shadow-2xl"
+                  className="object-contain w-full"
                   loading="lazy"
                 />
               </div>
@@ -159,7 +159,7 @@ export default function SolutionsPage() {
                   alt="TagMyTaxi Dispatch App — ride assignment and driver tracking"
                   width={280}
                   height={560}
-                  className="object-contain w-full drop-shadow-2xl"
+                  className="object-contain w-full"
                   loading="lazy"
                 />
               </div>
