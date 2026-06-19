@@ -116,11 +116,11 @@ export default function AboutPage() {
             <div className="grid md:grid-cols-2 gap-8 md:gap-16 items-center">
               <FadeIn delay={0.2} direction="right" className="flex justify-center">
                 <Image
-                  src="/taxi_ride_illustration.png"
+                  src="/aboutus.png"
                   alt="What We Do"
                   width={380}
                   height={340}
-                  className="object-contain"
+                  className="object-contain rounded-3xl"
                   style={{ filter: 'drop-shadow(0 16px 32px rgba(0,0,0,0.10))' }}
                 />
               </FadeIn>
@@ -369,11 +369,11 @@ export default function AboutPage() {
               </FadeIn>
               <FadeIn delay={0.4} direction="left" className="flex justify-center">
                 <Image
-                  src="/phone_app_illustration.png"
+                  src="/aboutus2.png"
                   alt="How We Work"
                   width={380}
                   height={340}
-                  className="object-contain"
+                  className="object-contain rounded-3xl"
                   style={{ filter: 'drop-shadow(0 16px 32px rgba(0,0,0,0.10))' }}
                 />
               </FadeIn>
