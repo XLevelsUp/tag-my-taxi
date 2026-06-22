@@ -14,6 +14,7 @@ import {
 } from '@/components/landing/LandingInteractive'
 import { PlayStoreModalButton } from '@/components/landing/PlayStoreModalButton'
 import { UnifiedContactForm } from '@/components/landing/UnifiedContactForm'
+import { SourceForgeBadge } from '@/components/landing/SourceForgeBadge'
 
 /* ── Lazy-loaded below-fold client components (reduces initial JS bundle) ── */
 const ReviewCarousel = dynamic(
@@ -205,6 +206,42 @@ export default async function Home() {
                 <span className="text-gray-300 text-sm italic">
                   Try free for 15 days. No credit card required.
                 </span>
+              </div>
+
+              {/* Trust/Rating & Accreditation Badges with premium card layouts */}
+              <div className="pt-6 border-t border-white/10 flex flex-col gap-5 mt-8">
+                {/* Review Badges */}
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                  <div className="text-[13px] font-black uppercase tracking-wider text-gray-300/90 whitespace-nowrap min-w-[100px] text-center lg:text-left">
+                    Top Rated:
+                  </div>
+                  <div className="bg-white px-4 py-2 rounded-2xl shadow-xl flex items-center justify-center">
+                    <SourceForgeBadge />
+                  </div>
+                </div>
+
+                {/* Accreditation */}
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                  <div className="text-[13px] font-black uppercase tracking-wider text-gray-300/90 whitespace-nowrap min-w-[100px] text-center lg:text-left">
+                    Accredited:
+                  </div>
+                  <div className="flex items-center gap-6 bg-white px-6 py-3 rounded-2xl shadow-xl">
+                    <Image
+                      src="/bas-iso-badge.png"
+                      alt="BAS ISO 27001 Certified"
+                      width={48}
+                      height={48}
+                      className="object-contain hover:scale-105 transition-transform duration-200 cursor-pointer"
+                    />
+                    <Image
+                      src="/dmca-badge.png"
+                      alt="DMCA Protected"
+                      width={100}
+                      height={25}
+                      className="object-contain hover:scale-105 transition-transform duration-200 cursor-pointer"
+                    />
+                  </div>
+                </div>
               </div>
             </FadeIn>
 

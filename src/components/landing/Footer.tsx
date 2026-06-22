@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { SourceForgeBadge } from '@/components/landing/SourceForgeBadge'
 
 const footerLinkStyle: React.CSSProperties = {
   fontSize: '16px',
@@ -85,7 +84,7 @@ export function Footer() {
 
       {/* Main Footer Content */}
       <div className="max-w-6xl mx-auto px-6 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
           {/* Company */}
           <div>
             <h3
@@ -137,34 +136,6 @@ export function Footer() {
                 <p className="font-semibold text-gray-700 text-base uppercase tracking-widest mb-1">Dubai Marina</p>
                 <p>+91 8248729959</p>
               </div>
-            </div>
-          </div>
-
-          {/* Accreditation */}
-          <div>
-            <h3
-              className="font-bold text-gray-800 mb-6"
-              style={{ fontSize: '16px', textTransform: 'uppercase', letterSpacing: '0.12em' }}
-            >
-              Accreditation
-            </h3>
-            <div className="space-y-4">
-              <Image
-                src="/bas-iso-badge.png"
-                alt="BAS ISO 27001 Certified"
-                width={90}
-                height={90}
-                className="object-contain"
-              />
-              <Image
-                src="/dmca-badge.png"
-                alt="DMCA Protected"
-                width={120}
-                height={30}
-                className="object-contain"
-              />
-              {/* SourceForge Badge — official JS widget */}
-              <SourceForgeBadge />
             </div>
           </div>
         </div>
