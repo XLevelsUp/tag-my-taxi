@@ -156,12 +156,16 @@
   html {
     @apply font-sans;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100%;
   }
   body {
     @apply bg-background font-sans;
     color: var(--body-color);
     font-size: 16px;
     line-height: 1.65;
+    overflow-x: hidden;
+    max-width: 100%;
   }
   h1, h2, h3, h4, h5, h6 {
     color: var(--body-dark-color);
